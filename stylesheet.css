@@ -1,11 +1,24 @@
 .carousel-caption{
     background-color: rgba(0,0,0,0.5);
 }
-/*@font-face { WILL RETURN TO FINISH
-    font-family: HarryP;
-    src:
-} */
+@font-face {
+    font-family: "HarryP";
+    src: url(./fonts/HARRYP__.TTF) format('truetype');
+    font-family: "Lumos";
+    src: url(./fonts/LUMOS.TTF);
+    font-family: "IncendioFont";
+    src: url(./fonts/CELTG___.TTF);
+}
+.logo {
+  font-family: "IncendioFont";
+}
+.lumos {
+  font-family: "Lumos";
+}
 
+.HP {
+  font-family: "HarryP";
+}
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -13,3 +26,11 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.banner {
+  background-image: url("images/birthday-cake.jpg");
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+}
+
