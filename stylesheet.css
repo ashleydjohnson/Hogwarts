@@ -13,3 +13,27 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.carousel-caption h2{
+  font-size:70px;
+  font-weight: 400;
+  color: white;
+}
+.carousel-caption p{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+figcaption h2{
+  font-size:70px;
+  font-weight: 400;
+  color: white;
+}
+
+figcaption p{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+

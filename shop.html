@@ -21,20 +21,25 @@
   <body>
    
     <!---Navbar-->
-      <nav class="navbar navbar-light bg-light navbar-expand">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/incendioLgLogox2-transparent.png" class="img-fluid" style="height:50%; width:50%;">
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-link" href="#">Menu</li>
-                <li class="nav-link" href="#">Events</li>
-                <li class="nav-link" href="#">Shop</li>
-                <li class="nav-link" href="#">About</li>
-                <li class="nav-link" href="#">Contact</li>
-                <a href="#" class="scart"><li> <i class="fas fa-shopping-cart"></i></li> </a>
-            </ul>
-        </div>
+    <nav class="navbar navbar-light bg-light navbar-expand">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <!---logo for small screen and up-->
+          <img src="images/incendioLgLogox2-transparent.png" class="img-fluid d-none d-sm-block"
+            style="height:50%; width:50%;">
+          <!---log for xs screen -->
+          <img src="images/incendioSmLogo-transparent.png" class="img-fluid d-block d-sm-none"
+            style="height:75%; width:75%;">
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-link"><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
+          <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Menu</a></li>
+          <li class="nav-link"><a href="events.html" class="text-decoration-none text-reset">Events</a></li>
+          <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Shop</a></li>
+          <li class="nav-link"><a href="#" class="text-decoration-none text-reset">About</a></li>
+          <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Contact</a></li>
+        </ul>
+      </div>
     </nav>
       <!--End Of Nav-->
 
