@@ -58,10 +58,10 @@ figcaption p{
 }
 
 hr {
-    border: dotted lightgrey 6px;
+    border: dashed lightgrey 4px;
     border-bottom: none;
-    width: 40%;
-    margin: 100px auto;
+    width: 50%;
+    margin: 50px auto;
 }
 
 .row-content {
@@ -69,4 +69,22 @@ hr {
     border-bottom: 1px ridge;
     min-height: 200px;
 }
+
+#feedback {
+  text-align: center;
+}
+
+#fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
+  padding-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+    #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
+        padding-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+    }
+  }
 
