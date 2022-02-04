@@ -108,3 +108,101 @@ transition:0.4s
 .pennant{
   margin-top:35px;
 }
+
+/*!!!!!!!!!!!!!!START OF PRODUCT PAGE!!!!!!!!!!!!*/
+
+#banners{
+  background-image: url("images/store/ToResize/bg3.jpg");
+  padding: 25px;
+}
+
+.header-title{
+  color: goldenrod;
+  text-align: center;
+}
+
+.allbtn{
+ 
+  border-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+ background-image: repeating-linear-gradient(45deg,#222F5B,#1A472A, #EEBA30, darkred )
+}
+
+.gryfbtn{
+background-image:repeating-linear-gradient(45deg, darkred, yellow);
+ border-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+}
+.slybtn{
+background-image:radial-gradient( #1A472A 45%, #5d5d5d);
+ border-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+}
+.ravenbtn{
+background-image:radial-gradient( #222F5B 50%, #5D5D5D);
+ border-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+  padding:18px;
+}
+.huffbtn{
+background-image:radial-gradient(#FFDB00 50%, #60605c, black);
+ border-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+.allbtn:hover,.gryfbtn:hover,.slybtn:hover,.ravenbtn:hover,.huffbtn:hover{
+  margin-top: -2;
+     margin-right: 2px;
+    transition: margin 0.2s ease-in-out; 
+    border-width: 6px;
+    border-color: gold;
+}
+
+.crest:hover{
+   
+ padding:3px; 
+    margin:15px; 
+  }
+
+ 
+  #myproducts{
+    padding: 40px;
+    margin: 0
+  }
+
+  .btn-default:active .filter-button:active{
+    background-color:goldenrod;
+  }
+
+  .product{
+    margin-bottom:30px;
+  }
+
+  .product:hover{
+    padding: 10px;
+  
+    transition: 0.4s;
+  }
+
+  h6{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .price{
+    font-weight: 500;
+  }
+
+ .fa-cart-plus{
+ margin-left: 100px;
+ cursor: pointer;
+      }
+
+       .fa-cart-plus:hover{
+background-color:gray
+      }
