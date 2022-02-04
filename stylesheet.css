@@ -57,3 +57,16 @@ figcaption p{
   padding-bottom: 1rem;
 }
 
+hr {
+    border: dotted lightgrey 6px;
+    border-bottom: none;
+    width: 40%;
+    margin: 100px auto;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
