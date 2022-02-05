@@ -76,14 +76,14 @@ hr {
 
 #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
   padding-left: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lumos', Times, serif;
   text-align: right;
 }
 
 @media (max-width: 760px) {
     #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
         padding-left: 10px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Lumos', Times, serif;
         text-align: left;
     }
   }
