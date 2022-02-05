@@ -33,7 +33,8 @@
                     style="height:75%; width:75%;">
             </a>
             <ul class="navbar-nav">
-                <li class="nav-link d-none d-sm-block"><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
+                <li class="nav-link d-none d-sm-block"><a href="index.html"
+                        class="text-decoration-none text-reset">Home</a></li>
                 <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Menu</a></li>
                 <li class="nav-link"><a href="events.html" class="text-decoration-none text-reset">Events</a></li>
                 <li class="nav-link"><a href="shop.html" class="text-decoration-none text-reset">Shop</a></li>
@@ -42,119 +43,178 @@
             </ul>
         </div>
     </nav>
-<!--Accordian-->
-<div id="menu" class="p-4">
-    <!--Potions-->
-    <div class="card">
-        <div class="card-header" id="potions">
-            <h5 class="mb-0">
-                <button class="btn btn-link text-decoration-none text-reset" data-toggle="collapse" data-target="#collapsePotions" aria-expanded="true"
-                    aria-controls="collapsePotions">
-                    <h2>Potions</h2>
-                </button>
-            </h5>
-        </div>
+    <!--Accordian-->
+    <div id="menu" class="p-4">
+        <!--Potions-->
+        <div class="card">
+            <div class="card-header" id="potions">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-reset" data-toggle="collapse"
+                        data-target="#collapsePotions" aria-expanded="true" aria-controls="collapsePotions">
+                        <h2>Potions</h2>
+                    </button>
+                </h5>
+            </div>
 
-        <div id="collapsePotions" class="collapse show" aria-labelledby="headingOne" data-parent="#menu">
-            <div class="card-body row">
-                <div class="col">
-                    <h5>Drink Name</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo fugit optio incidunt doloremque in velit consequatur, ipsum quis labore a libero sit impedit maxime saepe ipsa facere quibusdam earum.</p>
-                    <p>$12.50</p>
+            <div id="collapsePotions" class="collapse show" aria-labelledby="headingOne" data-parent="#menu">
+                <div class="card-body">
+                    <!--Butterbeer Cocktail Section-->
+                    <div class="row justify-content-between p-3">
+                        <div class="col my-auto">
+                            <h5>Butterbeer Cocktail</h5>
+                            <p>This is not your nonalcoholic recipes for Butterbeer! Thanks to vanilla vodka,
+                                butterscotch
+                                schnapps and a glug of Guinness, a couple of these will have you dancing around like
+                                happy house elves.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Death Eater Negroni</h5>
+                            <p>This dark and moody version of the classic drink brings topshelf Freemont Mischief
+                                Gin, pomegranate juice, and Campari to create
+                                something magical.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Unicorn Blood Cocktail</h5>
+                            <p>This gorgeous peach and raspberry cocktail has silver swirls with raspberry puree that
+                                makes it taste
+                                delicious. <strong>Disclaimer: No unicorns are harmed in the making of this
+                                    cocktail.</strong></p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                        </div>
+                        <div class="col-3">
+                            <figure>
+                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded" alt="Butterbeer Cocktail">
+                                <figcaption class="figure-caption text-right">Butterbeer Cocktail</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--Goblet of Fire section-->
+                    <div class="row justify-content-between p-3">
+                        <div class="col my-auto">
+                            <h5>Goblet of Fire</h5>
+                            <p>One sip of this Old Fashioned you won't be bound to complete a Triwizard Tournament. But
+                                this is so delicious, you'll feel bound to finish the entire glass!</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Firewhiskey</h5>
+                            <p>Coming to you from the Hog’s Head pub, this cocktail of whiskey, 151 rum, and cinnamon schnapps is for the bravest wizard and/or witch. For it feels like you just
+                            swallowed fire whole!</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Voldemort Cocktail</h5>
+                            <p>The You-Know-Who Cocktail is dark and dangerous, with black sambuca, absinthe, gin, a
+                            shave of lemon zest and a dash of bitters. The combination is pungent and bitter, much like He-Who-Must-Not-Be-Named.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                        </div>
+                        <div class="col-3">
+                            <figure>
+                                <img src="images/smoked-old-fashioned.jpg" class="img-fluid rounded" alt="Goblet of Fire">
+                                <figcaption class="figure-caption text-right">Goblet of Fire</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="images/moscow-mule.jpg" class="img-fluid" alt="moscow-mule" style="height: 50%;">
+            </div>
+        </div>
+        <!--Appetizers-->
+        <div class="card">
+            <div class="card-header" id="apps">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                        data-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
+                        <h2>Appetizers</h2>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseApps" class="collapse" aria-labelledby="headingApps" data-parent="#menu">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <!--Main Course-->
+        <div class="card">
+            <div class="card-header" id="mainCourse">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                        data-target="#collapseMain" aria-expanded="false" aria-controls="collapseMain">
+                        <h2>Main Course</h2>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseMain" class="collapse" aria-labelledby="mainCourse" data-parent="#menu">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <!--Kids Menu-->
+        <div class="card">
+            <div class="card-header" id="kids">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                        data-target="#collapseKids" aria-expanded="false" aria-controls="collapseKids">
+                        <h2>Kids Menu</h2>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseKids" class="collapse" aria-labelledby="kids" data-parent="#menu">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <!--Desserts-->
+        <div class="card">
+            <div class="card-header" id="desserts">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                        data-target="#collapseDesserts" aria-expanded="false" aria-controls="collapseDesserts">
+                        <h2>Desserts</h2>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseDesserts" class="collapse" aria-labelledby="desserts" data-parent="#menu">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
             </div>
         </div>
     </div>
-    <!--Appetizers-->
-    <div class="card">
-        <div class="card-header" id="apps">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse" data-target="#collapseApps"
-                    aria-expanded="false" aria-controls="collapseApps">
-                    <h2>Appetizers</h2>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseApps" class="collapse" aria-labelledby="headingApps" data-parent="#menu">
-            <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-        </div>
-    </div>
-    <!--Main Course-->
-    <div class="card">
-        <div class="card-header" id="mainCourse">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse" data-target="#collapseMain"
-                    aria-expanded="false" aria-controls="collapseMain">
-                   <h2>Main Course</h2>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseMain" class="collapse" aria-labelledby="mainCourse" data-parent="#menu">
-            <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-        </div>
-    </div>
-    <!--Kids Menu-->
-    <div class="card">
-        <div class="card-header" id="kids">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse" data-target="#collapseKids"
-                    aria-expanded="false" aria-controls="collapseKids">
-                    <h2>Kids Menu</h2>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseKids" class="collapse" aria-labelledby="kids" data-parent="#menu">
-            <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-        </div>
-    </div>
-    <!--Desserts-->
-    <div class="card">
-        <div class="card-header" id="desserts">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse" data-target="#collapseDesserts"
-                    aria-expanded="false" aria-controls="collapseDesserts">
-                    <h2>Desserts</h2>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseDesserts" class="collapse" aria-labelledby="desserts" data-parent="#menu">
-            <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-        </div>
-    </div>
-</div>
-<!--end Accordian-->
-<!--View pdf menu button-->
+    <!--end Accordian-->
+    <!--View pdf menu button-->
 
     <footer>
         <!--Footer mobile & small-->
@@ -211,14 +271,14 @@
                 <p>© 2022 Incendio, Inc. All Rights Reserved</p>
             </div>
         </div>
-    
+
     </footer>
-    
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>
