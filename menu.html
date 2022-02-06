@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="stylesheet.css" />
 
     <link rel="icon" href="images/favicon.ico">
@@ -33,8 +36,7 @@
                     style="height:75%; width:75%;">
             </a>
             <ul class="navbar-nav">
-                <li class="nav-link d-none d-sm-block"><a href="index.html"
-                        class="text-decoration-none text-reset">Home</a></li>
+                <li class="nav-link d-none d-sm-block"><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
                 <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Menu</a></li>
                 <li class="nav-link"><a href="events.html" class="text-decoration-none text-reset">Events</a></li>
                 <li class="nav-link"><a href="shop.html" class="text-decoration-none text-reset">Shop</a></li>
@@ -44,17 +46,17 @@
         </div>
     </nav>
     <!--Accordian-->
-    <div id="menu" class="p-4">
+    <div class="accordion p-4" id="menu">
         <!--Spirited Potions-->
-        <div class="card text-light" style="background-color: #1a472a;">
-            <div class="card-header" id="spiritedPotions">
-                <h5 class="mb-0">
-                    <button class="btn btn-link text-decoration-none text-reset" data-toggle="collapse"
+        <div class="card">
+            <div class="card-header" id="spiritedPotions" style="border-bottom-color: #1a472a; border-bottom-width: .5rem;">
+                <h2>
+                    <button class="btn btn-link btn-block text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseSpiritedPotions" aria-expanded="true"
                         aria-controls="collapseSpiriedPotions">
-                        <h2>Spirited Potions</h2>
+                        <h2 class="text-left">Spirited Potions</h2>
                     </button>
-                </h5>
+                </h2>
             </div>
 
             <div id="collapseSpiritedPotions" class="collapse show" aria-labelledby="spiritedPotions"
@@ -122,12 +124,12 @@
             </div>
         </div>
         <!--Potions-->
-        <div class="card text-light" style="background-color: goldenrod;">
-            <div class="card-header" id="potions">
+        <div class="card">
+            <div class="card-header" id="potions" style="border-bottom-color: goldenrod; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapsePotions" aria-expanded="false" aria-controls="collapsePotions">
-                        <h2>Potions</h2>
+                        <h2 class="text-left">Potions</h2>
                     </button>
                 </h5>
             </div>
@@ -187,12 +189,12 @@
             </div>
         </div>
         <!--Appetizers-->
-        <div class="card text-light" style="background-color: #0e1a40;">
-            <div class="card-header" id="apps">
+        <div class="card">
+            <div class="card-header" id="apps" style="border-bottom-color: maroon; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
-                        <h2>Appetizers</h2>
+                        <h2 class="text-left">Appetizers</h2>
                     </button>
                 </h5>
             </div>
@@ -254,12 +256,12 @@
             </div>
         </div>
         <!--Main Course-->
-        <div class="card text-light" style="background-color: maroon;">
-            <div class="card-header" id="mainCourse">
+        <div class="card">
+            <div class="card-header" id="mainCourse" style="border-bottom-color: #031a40 ; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseMain" aria-expanded="false" aria-controls="collapseMain">
-                        <h2>Main Course</h2>
+                        <h2 class="text-left">Main Course</h2>
                     </button>
                 </h5>
             </div>
@@ -320,12 +322,12 @@
             </div>
         </div>
         <!--Kids Menu-->
-        <div class="card text-light" style="background-color: #1a472a;">
-            <div class="card-header" id="kids">
+        <div class="card">
+            <div class="card-header" id="kids" style="border-bottom-color: #1a472a; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseKids" aria-expanded="false" aria-controls="collapseKids">
-                        <h2>Kids Menu</h2>
+                        <h2 class="text-left">Kids Menu</h2>
                     </button>
                 </h5>
             </div>
@@ -361,14 +363,12 @@
             </div>
         </div>
         <!--Desserts-->
-        <div class="card text-light" style="background-color:goldenrod;">
-            <div class="card-header" id="desserts">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
-                        data-target="#collapseDesserts" aria-expanded="false" aria-controls="collapseDesserts">
-                        <h2>Desserts</h2>
-                    </button>
-                </h5>
+        <div class="card">
+            <div class="card-header" id="desserts" style="border-bottom-color: goldenrod; border-bottom-width: .5rem;">
+                <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    data-target="#collapseDesserts" aria-expanded="false" aria-controls="collapseDesserts">
+                    <h2 class="text-left">Desserts</h2>
+                </button>
             </div>
             <div id="collapseDesserts" class="collapse" aria-labelledby="desserts" data-parent="#menu">
                 <div class="card-body">
@@ -429,7 +429,7 @@
     <!--end Accordian-->
     <!--View pdf menu button-->
     <div class="col p-3">
-        <a class="btn btn-dark btn-block p-3" style="background-color: #0e1a40;" href="#">Download PDF Menu</a>
+        <a class="btn btn-dark btn-block p-3" style="background-color: maroon;" href="#">Download PDF Menu</a>
     </div>
 
     <footer>
@@ -494,6 +494,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 
 </body>
 
