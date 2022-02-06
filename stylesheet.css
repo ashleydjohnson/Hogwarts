@@ -4,11 +4,18 @@
 @font-face {
     font-family: "HarryP";
     src: url(./fonts/HARRYP__.TTF) format('truetype');
+}
+
+@font-face {
     font-family: "Lumos";
     src: url(./fonts/LUMOS.TTF);
+}
+
+@font-face {
     font-family: "IncendioFont";
     src: url(./fonts/CELTG___.TTF);
 }
+
 .logo {
   font-family: "IncendioFont";
 }
