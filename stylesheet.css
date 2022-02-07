@@ -118,3 +118,8 @@ hr {
     color: grey;
     line-height: 50%;
   }
+
+  #menu .card {
+    border-right: none;
+    border-left: none;
+  }
