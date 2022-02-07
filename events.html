@@ -86,7 +86,7 @@
                     <h1 class="HP"> Corporate Events</h1>
                     <p>Every Incendio private room comes with everything <br>you need to host a special company
                         meeting. <br>Choose your house and let our wizards take it from there.</p>
-                    <button type="button" class="btn btn-primary lumos"> Contact Our Planning Wizard</button>
+                    <button type="button" class="btn btn-primary lumos" data-toggle="modal" data-target="#planningWizard"> Contact Our Planning Wizard</button>
                 </div>
             </div>
             <div class="carousel-item" data-interval="8000">
@@ -96,7 +96,7 @@
                     <h1 class="HP">Birthday Parties</h1>
                     <p>Incendio birthday parties are perfect for all ages! <br>Our customizable food and drink menu will be
                         sure <br>to please the palate of any witch or wizard.</p>
-                    <button type="button" class="btn btn-warning lumos"> Contact Our Planning Wizard</button>
+                    <button type="button" class="btn btn-warning lumos" data-toggle="modal" data-target="#planningWizard"> Contact Our Planning Wizard</button>
                 </div>
             </div>
             <div class="carousel-item" data-interval="8000">
@@ -106,7 +106,7 @@
                     <h1 class="HP">Team-Building Events</h1>
                     <p>With customizable games and challenges, our <br>Team-Bulding events are the perfect way to get <br>your
                         team out of the office and in to some serious fun.</p>
-                    <button type="button" class="btn btn-success lumos"> Contact Our Planning Wizard</button>
+                    <button type="button" class="btn btn-success lumos" data-toggle="modal" data-target="#planningWizard"> Contact Our Planning Wizard</button>
                 </div>
             </div>
         </div>
@@ -236,6 +236,110 @@
         </div>
     </div>
     <!--End of Escape Room Modal-->
+    <!--Contact Our Planning Wizard Modal-->
+    <div class="modal fade" id="planningWizard" tabindex="-1" aria-labelledby="wizardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #0e1a40;">
+                    <h5 class="modal-title text-light" id="wizardModalLabel">Reserve a Table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-group" for="contactName">Contact Name</label>
+                            <input type="text" class="form-control flex-fill mr-2" id="contactName" name="name"
+                                placeholder="Contact Name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group" for="phoneNum">Phone Number</label>
+                            <input type="tel" class="form-control flex-fill mr-2" id="phoneNum" name="tel"
+                                placeholder="(xxx) xxx - xxxx" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group" for="email">Email</label>
+                            <input type="email" class="form-control flex-fill mr-2" id="email" name="email"
+                                placeholder="name@domain.com" />
+                        </div>
+                        <div class="form-group">
+                            <fieldset class="form-group">
+                                <legend class="form-group col-form-label">Contact Preference</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="emailPref" id="emailPref"
+                                        value="email">
+                                    <label class="form-check-label" for="emailPref">Email</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="phonePref" id="phonePref"
+                                        value="phone">
+                                    <label class="form-check-label" for="phonePref">Phone</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <label for="house">House Request</label>
+                            <select class="form-control" id="house">
+                                <option>No request</option>
+                                <option>Gryffindor</option>
+                                <option>Ravenclaw</option>
+                                <option>Hufflepuff</option>
+                                <option>Slytherin</option>
+                                <option>More than once house</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Event Date</label>
+                            <input type="date" class="form-control flex-fill mr-2" id="eventDate" name="date"
+                                placeholder="Event Date" />
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Event Time</label>
+                            <input type="time" class="form-control flex-fill mr-2" id="eventTime" name="time"
+                                placeholder="Event Time" />
+                        </div>
+                        <div class="form-group">
+                            <label for="adultsEvent">Number of Adults</label>
+                            <input type="number" class="form-control flex-fill mr-2" id="adultsEvent" name="adults"
+                                placeholder="Number of Adults" />
+
+                            <div class="form group">
+                                <label for="childrenEvent">Number of Children (guests 12 & under)</label>
+                                <input type="number" class="form-control flex-fill mr-2" id="childrenEvent"
+                                    name="adults" placeholder="Number of Children" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <fieldset class="form-group">
+                                <legend class="form-group col-form-label">Dietary Restrictions</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="vegan" id="vegan" value="vegan">
+                                    <label class="form-check-label" for="vegan">Vegan</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="vegetarian" id="vegetarian" value="vegetarian">
+                                    <label class="form-check-label" for="vegetarian">Vegetarian</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gluten" id="gluten" value="gluten">
+                                    <label class="form-check-label" for="gluten">Gluten Free</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="lactose" id="lactose" value="lactose">
+                                    <label class="form-check-label" for="lactose">Lactose Free</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--End of Cards-->
     <!--Events by House Accordian-->
     <h1 class="logo">Events by House</h1>
