@@ -98,3 +98,13 @@ hr {
   font-size: 3rem;
 }
 
+  #menu .card .card-header .btn-link::after{
+    content:"\f106";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    float: right;
+  }
+  
+  #menu .card .card-header .btn-link.collapsed::after{
+    content:"\f107";
+  }

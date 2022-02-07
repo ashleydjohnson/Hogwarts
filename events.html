@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" href="images/favicon.ico">
 
     <title>Events Page</title>
 </head>
@@ -93,7 +94,7 @@
                     <div class="card-body">
                         <h3 class="card-title HP">Harry's Birthday Pub Crawl</h3>
                         <button type="button" class="btn btn-danger lumos" data-toggle="modal"
-                            data-target="pubModal">Click for More Information</button>
+                            data-target="#pubModal">Click for More Information</button>
                         <button type="button" class="btn btn-danger lumos">Reserve Your Spot</button>
                     </div>
                 </div>
@@ -103,7 +104,7 @@
                     <div class="card-body">
                         <h3 class="card-title HP">Dobby's Tea Party</h3>
                         <button type="button" class="btn btn-info lumos" data-toggle="modal"
-                            data-target="teaModal">Click for More Information</button>
+                            data-target="#teaModal">Click for More Information</button>
                         <button type="button" class="btn btn-info lumos">Reserve Your Spot</button>
                     </div>
                 </div>
@@ -113,7 +114,7 @@
                     <div class="card-body">
                         <h3 class="card-title HP">Escape the Chamber of Secrets</h3>
                         <button type="button" class="btn btn-dark lumos" data-toggle="modal"
-                            data-target="escapeModal">Click for More Information</button>
+                            data-target="#escapeModal">Click for More Information</button>
                         <button type="button" class="btn btn-dark lumos">Reserve Your Spot</button>
                     </div>
                 </div>
@@ -122,11 +123,12 @@
     </div>
 
     <!--Modals-->
+    <!--Pub Crawl Modal-->
     <div class="modal fade" id="pubModal" tabindex="-1" aria-labelledby="pubModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: #0e1a40;">
-                    <h5 class="modal-title text-light" id="pubModalLabel">Harry's Birthday Pub Crawl</h5>
+                <div class="modal-header" style="background-color: maroon;">
+                    <h5 class="modal-title text-light lumos" id="pubModalLabel">Harry's Birthday Pub Crawl</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="text-light" aria-hidden="true">&times;</span>
                     </button>
@@ -146,6 +148,53 @@
             </div>
         </div>
     </div>
+    <!--End of Pub Crawl Modal-->
+    <!--Tea Party Modal-->
+    <div class="modal fade" id="teaModal" tabindex="-1" aria-labelledby="teaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: teal">
+                    <h5 class="modal-title text-light lumos" id="teaModalLabel">Dobby's Tea Party</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>We’ll get dressed up and have some tea. 
+Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, Winky, and the other elves of Hogwarts in a lavish display of hospitality and friendship.
+</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
+                        Spot</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Tea Party Modal-->
+    <!--Escape Room Modal-->
+    <div class="modal fade" id="escapeModal" tabindex="-1" aria-labelledby="escapeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: darkgray">
+                    <h5 class="modal-title lumos" id="escapeModalLabel">Escape the Chamber of Secrets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Hidden in the shadow of the basilisk lies the truth to save young Ginny. Do you know the spell to stop Tom Riddle, or will your body lie in the chamber forever?  You have 60 minutes to find clues, solve puzzles, and ESCAPE the Chamber of Secrets!*</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
+                        Spot</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Escape Room Modal-->
     <!--End of Cards-->
     <!--Events by House Accordian-->
     <h1 class="logo">Events by House</h1>

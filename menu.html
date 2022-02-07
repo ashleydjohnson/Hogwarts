@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="stylesheet.css" />
 
     <link rel="icon" href="images/favicon.ico">
@@ -33,8 +36,7 @@
                     style="height:75%; width:75%;">
             </a>
             <ul class="navbar-nav">
-                <li class="nav-link d-none d-sm-block"><a href="index.html"
-                        class="text-decoration-none text-reset">Home</a></li>
+                <li class="nav-link d-none d-sm-block"><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
                 <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Menu</a></li>
                 <li class="nav-link"><a href="events.html" class="text-decoration-none text-reset">Events</a></li>
                 <li class="nav-link"><a href="shop.html" class="text-decoration-none text-reset">Shop</a></li>
@@ -44,19 +46,21 @@
         </div>
     </nav>
     <!--Accordian-->
-    <div id="menu" class="p-4">
+    <div class="accordion p-4" id="menu">
         <!--Spirited Potions-->
         <div class="card">
-            <div class="card-header" id="spiritedPotions">
-                <h5 class="mb-0">
-                    <button class="btn btn-link text-decoration-none text-reset" data-toggle="collapse"
-                        data-target="#collapseSpiritedPotions" aria-expanded="true" aria-controls="collapseSpiriedPotions">
-                        <h2>Spirited Potions</h2>
+            <div class="card-header" id="spiritedPotions" style="border-bottom-color: #1a472a; border-bottom-width: .5rem;">
+                <h2>
+                    <button class="btn btn-link btn-block text-decoration-none text-reset" data-toggle="collapse"
+                        data-target="#collapseSpiritedPotions" aria-expanded="true"
+                        aria-controls="collapseSpiriedPotions">
+                        <h2 class="text-left">Spirited Potions</h2>
                     </button>
-                </h5>
+                </h2>
             </div>
 
-            <div id="collapseSpiritedPotions" class="collapse show" aria-labelledby="spiritedPotions" data-parent="#menu">
+            <div id="collapseSpiritedPotions" class="collapse show" aria-labelledby="spiritedPotions"
+                data-parent="#menu">
                 <div class="card-body">
                     <!--Butterbeer Cocktail Section-->
                     <div class="row justify-content-between p-3">
@@ -79,9 +83,10 @@
                                     cocktail.</strong></p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-md-3 col-12 my-auto">
                             <figure>
-                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded" alt="Butterbeer Cocktail">
+                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded"
+                                    alt="Butterbeer Cocktail">
                                 <figcaption class="figure-caption text-right">Butterbeer Cocktail</figcaption>
                             </figure>
                         </div>
@@ -94,17 +99,23 @@
                                 this is so delicious, you'll feel bound to finish the entire glass!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             <h5>Firewhiskey</h5>
-                            <p>Coming to you from the Hog’s Head pub, this cocktail of whiskey, 151 rum, and cinnamon schnapps is for the bravest wizard and/or witch. For it feels like you just
-                            swallowed fire whole!</p>
+                            <p>Coming to you from the Hog’s Head pub, this cocktail of whiskey, 151 rum, and cinnamon
+                                schnapps is for the bravest wizard and/or witch. For it feels like you just
+                                swallowed fire whole!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             <h5>Voldemort Cocktail</h5>
                             <p>The You-Know-Who Cocktail is dark and dangerous, with black sambuca, absinthe, gin, a
-                            shave of lemon zest and a dash of bitters. The combination is pungent and bitter, much like He-Who-Must-Not-Be-Named.</p>
+                                shave of lemon zest and a dash of bitters. The combination is pungent and bitter, much
+                                like He-Who-Must-Not-Be-Named.</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Muggle Spirits</h5>
+                            <p>For the muggles in your midst, ask to see our current wine and beer selection.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">price varies</p>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-md-3 col-12 my-auto">
                             <figure>
-                                <img src="images/smoked-old-fashioned.jpg" class="img-fluid rounded" alt="Goblet of Fire">
+                                <img src="images/smoked-old-fashioned.jpg" class="img-fluid rounded"
+                                    alt="Goblet of Fire">
                                 <figcaption class="figure-caption text-right">Goblet of Fire</figcaption>
                             </figure>
                         </div>
@@ -114,41 +125,63 @@
         </div>
         <!--Potions-->
         <div class="card">
-            <div class="card-header" id="potions">
+            <div class="card-header" id="potions" style="border-bottom-color: goldenrod; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapsePotions" aria-expanded="false" aria-controls="collapsePotions">
-                        <h2>Potions</h2>
+                        <h2 class="text-left">Potions</h2>
                     </button>
                 </h5>
             </div>
             <div id="collapsePotions" class="collapse" aria-labelledby="headingPotions" data-parent="#menu">
                 <div class="card-body">
-                    <!--First Drink Section-->
+                    <!--Frozen Butterbeer Section-->
                     <div class="row justify-content-between p-3">
                         <div class="col my-auto">
-                            <h5>Butterbeer Cocktail</h5>
-                            <p>This is not your nonalcoholic recipes for Butterbeer! Thanks to vanilla vodka,
-                                butterscotch
-                                schnapps and a glug of Guinness, a couple of these will have you dancing around like
-                                happy house elves.</p>
+                            <h5>Frozen Butterbeer</h5>
+                            <p>Grab a glass of frozen butterbeer (non-alcoholic of course) and understand the brilliance
+                                of a cream-flavored soda slushie with buttscotch foam. Every sip will make you feel like
+                                celebrating your recent Quidditch win!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Death Eater Negroni</h5>
-                            <p>This dark and moody version of the classic drink brings topshelf Freemont Mischief
-                                Gin, pomegranate juice, and Campari to create
-                                something magical.</p>
+                            <h5>Pumpkin Fizzy</h5>
+                            <p>Inspired by Honeyduke's pumpkin Fizz candies, the pumpkin fizzy is a pumpkin spice soda
+                                mixed with apple juice, apricot puree, nutmeg, and cinnamon. </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Unicorn Blood Cocktail</h5>
-                            <p>This gorgeous peach and raspberry cocktail has silver swirls with raspberry puree that
-                                makes it taste
-                                delicious. <strong>Disclaimer: No unicorns are harmed in the making of this
-                                    cocktail.</strong></p>
+                            <h5>Pumpkin Juice</h5>
+                            <p>The go-to beverage of every young wizard! Apricot nectar loaded with nutmeg and cinnamon
+                                flavored orange drink.</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-md-3 col-12 my-auto">
                             <figure>
-                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded" alt="Butterbeer Cocktail">
-                                <figcaption class="figure-caption text-right">Butterbeer Cocktail</figcaption>
+                                <img src="images/frozen-butter-beer.jpg" class="img-fluid rounded"
+                                    alt="Frozen Butter Beer">
+                                <figcaption class="figure-caption text-right">Frozen Butter Beer</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--Polyjuice Potion Section-->
+                    <div class="row justify-content-between p-3">
+                        <div class="col my-auto">
+                            <h5>Flitwick's Cherry Soda</h5>
+                            <p>Enjoy Flitwick's favorite drink, complete with the little umbrella! Gingerale, a splash
+                                of grenadine and a maraschino cherry garnish complete this sweet drink.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Pollyjuice Potion</h5>
+                            <p>This imitation pollyjuice potion will fail to turn you into your favorite wizard, as
+                                we've skipped that crucial ingredient. Instead this punch has limesherbet, lemon lime
+                                soda and ginger ale.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Muggle Soda</h5>
+                            <p>For the visiting muggles, we offer Coke, Diet Coke, Sprite, Dr. Pepper, Root Beer and
+                                Iced Tea. All magicially refilled to your heart's content. </p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                        </div>
+                        <div class="col-md-3 col-12 my-auto">
+                            <figure>
+                                <img src="images/polyjuice.jpg" class="img-fluid rounded"
+                                    alt="Polyjuice Potion">
+                                <figcaption class="figure-caption text-right">Polyjuice Potion</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -157,41 +190,65 @@
         </div>
         <!--Appetizers-->
         <div class="card">
-            <div class="card-header" id="apps">
+            <div class="card-header" id="apps" style="border-bottom-color: maroon; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
-                        <h2>Appetizers</h2>
+                        <h2 class="text-left">Appetizers</h2>
                     </button>
                 </h5>
             </div>
             <div id="collapseApps" class="collapse" aria-labelledby="headingApps" data-parent="#menu">
                 <div class="card-body">
-                    <!--First Dish Section-->
+                    <!--Pasties Section-->
                     <div class="row justify-content-between p-3">
                         <div class="col my-auto">
-                            <h5>Butterbeer Cocktail</h5>
-                            <p>This is not your nonalcoholic recipes for Butterbeer! Thanks to vanilla vodka,
-                                butterscotch
-                                schnapps and a glug of Guinness, a couple of these will have you dancing around like
-                                happy house elves.</p>
+                            <h5>Mini Cornish Pasties</h5>
+                            <p>The epitome of British comfort food, these turnovers are filled with with beef and
+                                vegetables and then hit with the Reducio charm before filling a shareable platter!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Death Eater Negroni</h5>
-                            <p>This dark and moody version of the classic drink brings topshelf Freemont Mischief
-                                Gin, pomegranate juice, and Campari to create
-                                something magical.</p>
+                            <h5>Black Pudding Toasts</h5>
+                            <p>This classic British protein (blood sausage) sits atop toasted baguette and is topped
+                                with baby beetroot and blue cheese. </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Unicorn Blood Cocktail</h5>
-                            <p>This gorgeous peach and raspberry cocktail has silver swirls with raspberry puree that
-                                makes it taste
-                                delicious. <strong>Disclaimer: No unicorns are harmed in the making of this
-                                    cocktail.</strong></p>
+                            <h5>Fried Tomato Bites</h5>
+                            <p>Made with smoky slab bacon, fresh green tomatoes, a creamy pimento cheese spread, panko
+                                bread crumbs, and a frisee salad with lemon vinaigrette. These will be gone so fast,
+                                you'll swear someone cast the Evanesco spell!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-md-3 col-12 my-auto">
                             <figure>
-                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded" alt="Butterbeer Cocktail">
-                                <figcaption class="figure-caption text-right">Butterbeer Cocktail</figcaption>
+                                <img src="images/pasties.jpg" class="img-fluid rounded"
+                                    alt="Mini Cornish Pasties">
+                                <figcaption class="figure-caption text-right">Mini Cornish Pasties</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--Onion Soup Section-->
+                    <div class="row justify-content-between p-3">
+                        <div class="col my-auto">
+                            <h5>Crumpets</h5>
+                            <p>A tray of fresh crumpets served with a selection of butter, jam, honey, golden syrup,
+                                lemon curd, clotted cream, and peanut butter. We promise, we didn't let Hargid help make
+                                these!</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Kreacher's French Onion Soup</h5>
+                            <p>Kreacher showed his new-found affection for Harry after getting a Black Family Locket
+                                with delicious dishes. This Vegan French Onion soup was made with onions, cognac, vegan
+                                cheese, and lots of TLC. </p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Sorting Hat Cheese Plate</h5>
+                            <p>A collection of artisinal cheeses and crackers surround the centerpiece, a sorting hat
+                                made of cheese. The color is a mystery, to be revealed as you take your first bite and
+                                get sorted into your house! </p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                        </div>
+                        <div class="col-md-3 col-12 my-auto">
+                            <figure>
+                                <img src="images/soup.jpg" class="img-fluid rounded"
+                                    alt="Soup">
+                                <figcaption class="figure-caption text-right">Kreacher's French Onion Soup</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -200,41 +257,64 @@
         </div>
         <!--Main Course-->
         <div class="card">
-            <div class="card-header" id="mainCourse">
+            <div class="card-header" id="mainCourse" style="border-bottom-color: #031a40 ; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseMain" aria-expanded="false" aria-controls="collapseMain">
-                        <h2>Main Course</h2>
+                        <h2 class="text-left">Main Course</h2>
                     </button>
                 </h5>
             </div>
             <div id="collapseMain" class="collapse" aria-labelledby="mainCourse" data-parent="#menu">
-                <div class="card-body">`
-                    <!--First Dish Section-->
+                <div class="card-body">
+                    <!--Prime Rib Section-->
                     <div class="row justify-content-between p-3">
                         <div class="col my-auto">
-                            <h5>Butterbeer Cocktail</h5>
-                            <p>This is not your nonalcoholic recipes for Butterbeer! Thanks to vanilla vodka,
-                                butterscotch
-                                schnapps and a glug of Guinness, a couple of these will have you dancing around like
-                                happy house elves.</p>
+                            <h5>Professor Lupin's Shepherd's Pie</h5>
+                            <p>Harry may not have gobbled down Professor's Lupin's Shepherd Pie, but one bite will have
+                                you speculating why! A thick layer of piped mashed potatoes covering stewed beef,
+                                carrots, mushrooms, and peas tastes just as comforting as a hug from Mrs. Weasley. </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Death Eater Negroni</h5>
-                            <p>This dark and moody version of the classic drink brings topshelf Freemont Mischief
-                                Gin, pomegranate juice, and Campari to create
-                                something magical.</p>
+                            <h5>Hogwarts Feast</h5>
+                            <p>Hogwarts knows how to give an opening term feast and we've brought the highlights to you
+                                on a platter. Barbecued ribs and chicken, corn on the cob, new potatoes, vegetable medly
+                                and a house salad. Made to be enjoyed by a family of 3-6 wizards!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Unicorn Blood Cocktail</h5>
-                            <p>This gorgeous peach and raspberry cocktail has silver swirls with raspberry puree that
-                                makes it taste
-                                delicious. <strong>Disclaimer: No unicorns are harmed in the making of this
-                                    cocktail.</strong></p>
+                            <h5>Weasley Sunday Beef Roast</h5>
+                            <p>Roastbeef is a staple at the Weasley house and you'll enjoy every bite fo this tender cut
+                                of prime rib. Served with grilled asparagus and your choice of mashed or baked potato. </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-md-3 col-12 my-auto">
                             <figure>
-                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded" alt="Butterbeer Cocktail">
-                                <figcaption class="figure-caption text-right">Butterbeer Cocktail</figcaption>
+                                <img src="images/prime-rib.jpg" class="img-fluid rounded"
+                                    alt="Weasley Sunday Beef Roast">
+                                <figcaption class="figure-caption text-right">Weasley Sunday Beef Roast</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--Bouillabaisse Section-->
+                    <div class="row justify-content-between p-3">
+                        <div class="col my-auto">
+                            <h5>Leaky Couldron Kidney Pie</h5>
+                            <p>A trip to Diagon Alley was never complete without a stop at Leaky Couldron and a
+                                serving of Kidney Pie! Enjoy our interpretation, a beef and lamb stew served in a hearty
+                                bread bowl. </p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Burrow Chicken and Ham Pie</h5>
+                            <p>When you need something warm and comforting after a long day, there's nothing like a
+                                proper British Pie.</p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Beauxbatons Bouillabaisse</h5>
+                            <p>In honor of the Beauxbatons, enjoy a bowl of Provençal fish stew. Made with only the
+                                freshest seafood, with a broth that's been stweing for 2 days! </p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                        </div>
+                        <div class="col-md-3 col-12 my-auto">
+                            <figure>
+                                <img src="images/Bouillabaisse.jpg" class="img-fluid rounded"
+                                    alt="Bouillabaisse">
+                                <figcaption class="figure-caption text-right">Beaubatons Bouillabaisse</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -243,41 +323,39 @@
         </div>
         <!--Kids Menu-->
         <div class="card">
-            <div class="card-header" id="kids">
+            <div class="card-header" id="kids" style="border-bottom-color: #1a472a; border-bottom-width: .5rem;">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
                         data-target="#collapseKids" aria-expanded="false" aria-controls="collapseKids">
-                        <h2>Kids Menu</h2>
+                        <h2 class="text-left">Kids Menu</h2>
                     </button>
                 </h5>
             </div>
             <div id="collapseKids" class="collapse" aria-labelledby="kids" data-parent="#menu">
                 <div class="card-body">
-                    <!--First Dish Section-->
                     <div class="row justify-content-between p-3">
                         <div class="col my-auto">
-                            <h5>Butterbeer Cocktail</h5>
-                            <p>This is not your nonalcoholic recipes for Butterbeer! Thanks to vanilla vodka,
-                                butterscotch
-                                schnapps and a glug of Guinness, a couple of these will have you dancing around like
-                                happy house elves.</p>
+                            <h5>Chicken or Ham Sandwiches</h5>
+                            <p>McGonagall's not here to make your plate magically refill, but that also means you
+                                (probably) didn't just fly a car into the whomping willow! Ron and Harry couldn't get
+                                enough of these sandwiches and we'll bet you'll love them too. Pick your favoirite or
+                                get both! Served with your choice of chips, vegetable medly, or fruit.</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Death Eater Negroni</h5>
-                            <p>This dark and moody version of the classic drink brings topshelf Freemont Mischief
-                                Gin, pomegranate juice, and Campari to create
-                                something magical.</p>
+                            <h5>Fish and Chips</h5>
+                            <p>Little wizard sized fried fish, with chips, tartar sauce and grapes.</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
-                            <h5>Unicorn Blood Cocktail</h5>
-                            <p>This gorgeous peach and raspberry cocktail has silver swirls with raspberry puree that
-                                makes it taste
-                                delicious. <strong>Disclaimer: No unicorns are harmed in the making of this
-                                    cocktail.</strong></p>
+                            <h5> Quidditch Chicken Fingers</h5>
+                            <p>A basket of chicken broomsticks served with a full set of quidditch potato balls. Can you find the golden snitch? </p>
+                            <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
+                            <h5>Macaroni and Cheese</h5>
+                            <p>A couldron of Macaroni and cheese served with your choice of fruit or vegetable medly. Take your couldron home to make brew your next potion! </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-md-3 col-12 my-auto">
                             <figure>
-                                <img src="images/Butterbeer-cocktail.png" class="img-fluid rounded" alt="Butterbeer Cocktail">
-                                <figcaption class="figure-caption text-right">Butterbeer Cocktail</figcaption>
+                                <img src="images/fish-chips.jpg" class="img-fluid rounded"
+                                    alt="Fish and Chips">
+                                <figcaption class="figure-caption text-right">Fish and Chips</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -286,13 +364,11 @@
         </div>
         <!--Desserts-->
         <div class="card">
-            <div class="card-header" id="desserts">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-decoration-none text-reset" data-toggle="collapse"
-                        data-target="#collapseDesserts" aria-expanded="false" aria-controls="collapseDesserts">
-                        <h2>Desserts</h2>
-                    </button>
-                </h5>
+            <div class="card-header" id="desserts" style="border-bottom-color: goldenrod; border-bottom-width: .5rem;">
+                <button class="btn btn-link btn-block collapsed text-decoration-none text-reset" data-toggle="collapse"
+                    data-target="#collapseDesserts" aria-expanded="false" aria-controls="collapseDesserts">
+                    <h2 class="text-left">Desserts</h2>
+                </button>
             </div>
             <div id="collapseDesserts" class="collapse" aria-labelledby="desserts" data-parent="#menu">
                 <div class="card-body">
@@ -300,13 +376,19 @@
                     <div class="row justify-content-between p-3">
                         <div class="col my-auto">
                             <h5>Aunt Petunia's Pudding</h5>
-                            <p>We promise not to drop this delicious Spanische Windtorte of whipped cream, fresh strawberries, chocolate shavings, and (of course) sugared violets.</p>
+                            <p>We promise not to drop this delicious Spanische Windtorte with loads of whipped cream and
+                                fresh raspberries.</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             <h5>Dudley Dursley’s Knickerbocker Glory</h5>
-                            <p>Even Dudly Dursely wouldn't complain that this sundae is lacking... but he would still find an excuse for seconds! Vanilla ice cream layered with a Cocolate Melba syrup, raspberry coulis, strawberries, blueberries, topped with whipped cream, a cherry, and chodolate wafer. </p>
+                            <p>Even Dudly Dursely wouldn't complain that this sundae is lacking... but he would still
+                                find an excuse for seconds! Vanilla ice cream layered with a Cocolate Melba syrup,
+                                raspberry coulis, strawberries, blueberries, topped with whipped cream, a cherry, and
+                                chodolate wafer. </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             <h5>Treacle Tart</h5>
-                            <p>After one bite you'll understand why this is Harry's favorite dessert! This sweet pastry has a buttery shortcrust base and a gooey treacle (aka golden syrup) lemon juice filling.</p>
+                            <p>After one bite you'll understand why this is Harry's favorite dessert! This sweet pastry
+                                has a buttery shortcrust base and a gooey treacle (aka golden syrup) lemon juice
+                                filling.</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
                         <div class="col-md-3 col-12">
@@ -320,18 +402,22 @@
                     <div class="row justify-content-between p-3">
                         <div class="col my-auto">
                             <h5>Culdron Cake with Felix Felicis Filling</h5>
-                            <p>This chocolate cake is dripping with luck! Your vanilla pudding center tastes lukcy to us!</p>
+                            <p>This chocolate cake is dripping with luck! Your vanilla pudding center tastes lukcy to
+                                us!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             <h5>Weasley's Caranary Creams</h5>
-                            <p>Will you turn into a canary temporarily after eating this sweet cookie? We think the lemon cheese buttercream filling makes it worth the risk! </p>
+                            <p>Will you turn into a canary temporarily after eating this sweet cookie? We think the
+                                lemon cheese buttercream filling makes it worth the risk! </p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             <h5>Snape's Holiday Blancmage</h5>
-                            <p>Snape reminisced about this blancmage and you will too. This elegant vanilla custurd topped with fresh berries will delight your tastebuds!</p>
+                            <p>Snape reminisced about this blancmage and you will too. This elegant vanilla custurd
+                                topped with our cherry centered snitch will delight your tastebuds!</p>
                             <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                         </div>
                         <div class="col-md-3 col-12">
                             <figure>
-                                <img src="images/snape-dessert.jpg" class="img-fluid rounded" alt="Snape's Holiday Blancmage">
+                                <img src="images/snape-dessert.jpg" class="img-fluid rounded"
+                                    alt="Snape's Holiday Blancmage">
                                 <figcaption class="figure-caption text-right">Snape's Holiday Blancmage</figcaption>
                             </figure>
                         </div>
@@ -408,6 +494,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 
 </body>
 
