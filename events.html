@@ -69,6 +69,18 @@
             background-size: cover;
             opacity: .5;
         }
+        .btn {
+            margin: 3px;
+        }
+
+        table, td {
+            border: 1px solid gold;
+            padding: 6px;
+        }
+
+        .tableFill {
+            background-color: rgba(255, 215, 0, .2) ;
+        }
     </style>
 
     <!--Banner Carousel-->
@@ -86,7 +98,7 @@
                     <h1 class="HP"> Corporate Events</h1>
                     <p>Every Incendio private room comes with everything <br>you need to host a special company
                         meeting. <br>Choose your house and let our wizards take it from there.</p>
-                    <button type="button" class="btn btn-primary lumos"> Contact Our Planning Wizard</button>
+                    <button type="button" class="btn btn-primary lumos" style="background-color: navy;" data-toggle="modal" data-target="#planningWizard"> Contact Our Planning Wizard</button>
                 </div>
             </div>
             <div class="carousel-item" data-interval="8000">
@@ -96,7 +108,7 @@
                     <h1 class="HP">Birthday Parties</h1>
                     <p>Incendio birthday parties are perfect for all ages! <br>Our customizable food and drink menu will be
                         sure <br>to please the palate of any witch or wizard.</p>
-                    <button type="button" class="btn btn-warning lumos"> Contact Our Planning Wizard</button>
+                    <button type="button" class="btn btn-warning lumos" style="background-color: gold;" data-toggle="modal" data-target="#planningWizard"> Contact Our Planning Wizard</button>
                 </div>
             </div>
             <div class="carousel-item" data-interval="8000">
@@ -106,7 +118,7 @@
                     <h1 class="HP">Team-Building Events</h1>
                     <p>With customizable games and challenges, our <br>Team-Bulding events are the perfect way to get <br>your
                         team out of the office and in to some serious fun.</p>
-                    <button type="button" class="btn btn-success lumos"> Contact Our Planning Wizard</button>
+                    <button type="button" class="btn btn-success lumos" style="background-color: darkgreen;" data-toggle="modal" data-target="#planningWizard"> Contact Our Planning Wizard</button>
                 </div>
             </div>
         </div>
@@ -123,216 +135,384 @@
 
 
     <!--Upcoming Events Cards-->
-    <div class="container">
-        <div class="row">
-            <div class="card-deck">
-                <!--Pub Crawl-->
-                <div class="card text-center bg-light m-3 border-danger col-m-8">
-                    <img class="card-img-top" src="images/beer.jpg" alt="Beer">
-                    <div class="card-body">
-                        <h3 class="card-title HP">Harry's Birthday Pub Crawl</h3>
-                        <button type="button" class="btn btn-danger lumos" data-toggle="modal"
-                            data-target="#pubModal">Click for More Information</button>
-                        <button type="button" class="btn btn-danger lumos">Reserve Your Spot</button>
+        <div class="container">
+            <div class="row">
+                <div class="card-deck">
+                    <!--Pub Crawl-->
+                    <div class="card text-center bg-light m-3 col-m-8">
+                        <img class="card-img-top" src="images/beer.jpg" alt="Beer">
+                        <div class="card-body">
+                            <h3 class="card-title HP">Harry's Birthday Pub Crawl</h3>
+                            <button type="button" class="btn btn-danger lumos" style="background-color: maroon;" data-toggle="modal"
+                                data-target="#pubModal">Click for More Information</button>
+                            <button type="button" class="btn btn-danger lumos" style="background-color: maroon;" data-toggle="modal" data-target="#specialEventModal">Reserve Your Spot</button>
+                        </div>
+                    </div>
+                    <!--Tea Party-->
+                    <div class="card text-center bg-light m-3 border-info col-m-8">
+                        <img class="card-img-top" src="images/teapot-cropped.png" alt="Teapot">
+                        <div class="card-body">
+                            <h3 class="card-title HP">Dobby's Tea Party</h3>
+                            <button type="button" class="btn btn-info lumos" data-toggle="modal"
+                                data-target="#teaModal">Click for More Information</button>
+                            <button type="button" class="btn btn-info lumos" data-toggle="modal" data-target="#specialEventModal">Reserve Your Spot</button>
+                        </div>
+                    </div>
+                    <!--Escape Room-->
+                    <div class="card text-center bg-light m-3 border-dark col-m-8">
+                        <img class="card-img-top" src="images/timeturner-cropped.png" alt="Time Turner">
+                        <div class="card-body">
+                            <h3 class="card-title HP">Escape the Chamber of Secrets</h3>
+                            <button type="button" class="btn btn-dark lumos" data-toggle="modal"
+                                data-target="#escapeModal">Click for More Information</button>
+                            <button type="button" class="btn btn-dark lumos" data-toggle="modal" data-target="#specialEventModal">Reserve Your Spot</button>
+                        </div>
                     </div>
                 </div>
-                <!--Tea Party-->
-                <div class="card text-center bg-light m-3 border-info col-m-8">
-                    <img class="card-img-top" src="images/teapot-cropped.png" alt="Teapot">
-                    <div class="card-body">
-                        <h3 class="card-title HP">Dobby's Tea Party</h3>
-                        <button type="button" class="btn btn-info lumos" data-toggle="modal"
-                            data-target="#teaModal">Click for More Information</button>
-                        <button type="button" class="btn btn-info lumos">Reserve Your Spot</button>
-                    </div>
-                </div>
-                <!--Escape Room-->
-                <div class="card text-center bg-light m-3 border-dark col-m-8">
-                    <img class="card-img-top" src="images/timeturner-cropped.png" alt="Time Turner">
-                    <div class="card-body">
-                        <h3 class="card-title HP">Escape the Chamber of Secrets</h3>
-                        <button type="button" class="btn btn-dark lumos" data-toggle="modal"
-                            data-target="#escapeModal">Click for More Information</button>
-                        <button type="button" class="btn btn-dark lumos">Reserve Your Spot</button>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-
-    <!--Modals-->
-    <!--Pub Crawl Modal-->
-    <div class="modal fade" id="pubModal" tabindex="-1" aria-labelledby="pubModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: maroon;">
-                    <h5 class="modal-title text-light lumos" id="pubModalLabel">Harry's Birthday Pub Crawl</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="text-light" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Grab your brooms and come fly through the World of Wizardry! Dress up in your most brilliant
-                        Hogwarts attire and join us for an event unlike any other. This year’s HP Pub Crawl will feature
-                        the best bars in Hogsmeade with live performances and top local DJs. Awards for best dressed
-                        witch or wizard, best couple costume, and best group ensemble will be given. The bus leaves at
-                        1500 hrs. Limited seats available.*</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
-                        Spot</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Pub Crawl Modal-->
-    <!--Tea Party Modal-->
-    <div class="modal fade" id="teaModal" tabindex="-1" aria-labelledby="teaModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: teal">
-                    <h5 class="modal-title text-light lumos" id="teaModalLabel">Dobby's Tea Party</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="text-light" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>We’ll get dressed up and have some tea.
-                        Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, Winky, and the
-                        other elves of Hogwarts in a lavish display of hospitality and friendship.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
-                        Spot</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Tea Party Modal-->
-    <!--Escape Room Modal-->
-    <div class="modal fade" id="escapeModal" tabindex="-1" aria-labelledby="escapeModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: darkgray">
-                    <h5 class="modal-title lumos" id="escapeModalLabel">Escape the Chamber of Secrets</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="text-light" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Hidden in the shadow of the basilisk lies the truth to save young Ginny. Do you know the spell to
-                        stop Tom Riddle, or will your body lie in the chamber forever? You have 60 minutes to find
-                        clues, solve puzzles, and ESCAPE the Chamber of Secrets!*</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
-                        Spot</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Escape Room Modal-->
     <!--End of Cards-->
+    <!--Modals-->
+        <!--Pub Crawl Modal-->
+        <div class="modal fade" id="pubModal" tabindex="-1" aria-labelledby="pubModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: maroon;">
+                        <h5 class="modal-title text-light lumos" id="pubModalLabel">Harry's Birthday Pub Crawl</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Grab your brooms and come fly through the World of Wizardry! Dress up in your most brilliant
+                            Hogwarts attire and join us for an event unlike any other. This year’s HP Pub Crawl will feature
+                            the best bars in Hogsmeade with live performances and top local DJs. Awards for best dressed
+                            witch or wizard, best couple costume, and best group ensemble will be given. The bus leaves at
+                            1500 hrs. Limited seats available.*</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
+                            Spot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Pub Crawl Modal-->
+        <!--Tea Party Modal-->
+        <div class="modal fade" id="teaModal" tabindex="-1" aria-labelledby="teaModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: teal">
+                        <h5 class="modal-title text-light lumos" id="teaModalLabel">Dobby's Tea Party</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We’ll get dressed up and have some tea.
+                            Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, Winky, and the
+                            other elves of Hogwarts in a lavish display of hospitality and friendship.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
+                            Spot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Tea Party Modal-->
+        <!--Hufflepuff Movie Night Modal-->
+        <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: gold;">
+                        <h5 class="modal-title text-dark lumos" id="movieModalLabel">What are we watching?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td>February 10</td>
+                                <td>Harry Potter and the Sorcerer's Stone</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>February 17</td>
+                                <td>Harry Potter and the Chamber of Secrets</td>
+                            </tr>
+                            <tr>
+                                <td>February 24</td>
+                                <td>Harry Potter and the Prisoner of Azkaban</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>March 3</td>
+                                <td>Harry Potter and the Goblet of Fire</td>
+                            </tr>
+                            <tr>
+                                <td>March 10</td>
+                                <td>Harry Potter and the Order of the Phoenix</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>March 17</td>
+                                <td>Harry Potter and the Half Blood Prince</td>
+                            </tr>
+                            <tr>
+                                <td>March 24</td>
+                                <td>Harry Potter and the Dathly Hallows part 1</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>April 3</td>
+                                <td>Harry Potter and the Dathly Hallows part 2</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Hufflepuff Movie Night Modal-->
+        <!--Escape Room Modal-->
+        <div class="modal fade" id="escapeModal" tabindex="-1" aria-labelledby="escapeModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkgray">
+                        <h5 class="modal-title lumos" id="escapeModalLabel">Escape the Chamber of Secrets</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Hidden in the shadow of the basilisk lies the truth to save young Ginny. Do you know the spell to
+                            stop Tom Riddle, or will your body lie in the chamber forever? You have 60 minutes to find
+                            clues, solve puzzles, and ESCAPE the Chamber of Secrets!*</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Reserve Your
+                            Spot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Escape Room Modal-->
+        <!--Contact Our Planning Wizard Modal-->
+        <div class="modal fade" id="planningWizard" tabindex="-1" aria-labelledby="wizardModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header lumos" style="background-color: #0e1a40;">
+                        <h5 class="modal-title text-light" id="wizardModalLabel">Reserve a Table</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-group" for="contactName">Contact Name</label>
+                                <input type="text" class="form-control flex-fill mr-2" id="contactName" name="name"
+                                    placeholder="Contact Name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-group" for="phoneNum">Phone Number</label>
+                                <input type="tel" class="form-control flex-fill mr-2" id="phoneNum" name="tel"
+                                    placeholder="(xxx) xxx - xxxx" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-group" for="email">Email</label>
+                                <input type="email" class="form-control flex-fill mr-2" id="email" name="email"
+                                    placeholder="name@domain.com" />
+                            </div>
+                            <div class="form-group">
+                                <fieldset class="form-group">
+                                    <legend class="form-group col-form-label">Contact Preference</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="emailPref" id="emailPref"
+                                            value="email">
+                                        <label class="form-check-label" for="emailPref">Email</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="phonePref" id="phonePref"
+                                            value="phone">
+                                        <label class="form-check-label" for="phonePref">Phone</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                <label for="house">House Request</label>
+                                <select class="form-control" id="house">
+                                    <option>No request</option>
+                                    <option>Gryffindor</option>
+                                    <option>Ravenclaw</option>
+                                    <option>Hufflepuff</option>
+                                    <option>Slytherin</option>
+                                    <option>More than once house</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventDate">Event Date</label>
+                                <input type="date" class="form-control flex-fill mr-2" id="eventDate" name="date"
+                                    placeholder="Event Date" />
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Event Time</label>
+                                <input type="time" class="form-control flex-fill mr-2" id="eventTime" name="time"
+                                    placeholder="Event Time" />
+                            </div>
+                            <div class="form-group">
+                                <label for="adultsEvent">Number of Adults</label>
+                                <input type="number" class="form-control flex-fill mr-2" id="adultsEvent" name="adults"
+                                    placeholder="Number of Adults" />
+
+                                <div class="form group">
+                                    <label for="childrenEvent">Number of Children (guests 12 & under)</label>
+                                    <input type="number" class="form-control flex-fill mr-2" id="childrenEvent"
+                                        name="adults" placeholder="Number of Children" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <fieldset class="form-group">
+                                    <legend class="form-group col-form-label">Dietary Restrictions</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="vegan" id="vegan" value="vegan">
+                                        <label class="form-check-label" for="vegan">Vegan</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="vegetarian" id="vegetarian" value="vegetarian">
+                                        <label class="form-check-label" for="vegetarian">Vegetarian</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="gluten" id="gluten" value="gluten">
+                                        <label class="form-check-label" for="gluten">Gluten Free</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="lactose" id="lactose" value="lactose">
+                                        <label class="form-check-label" for="lactose">Lactose Free</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-dark" style="background-color: #0e1a40;">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Contact Our Planning Wizard Modal-->
+        <!--Special Event Modal-->
+        <div class="modal fade" id="specialEventModal" tabindex="-1" aria-labelledby="specialEventModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header lumos" style="background-color: maroon;">
+                        <h5 class="modal-title text-light" id="specialEventModalLabel">Special Events</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-group" for="reservationName">Name: </label>
+                                <input type="text" class="form-control flex-fill mr-2" id="reservationName" name="name"
+                                    placeholder="Name for Reservation" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-group" for="phoneNumber">Phone Number: </label>
+                                <input type="tel" class="form-control flex-fill mr-2" id="phoneNumber" name="tel"
+                                    placeholder="(xxx) xxx - xxxx" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-group" for="contactEmail">Email:</label>
+                                <input type="email" class="form-control flex-fill mr-2" id="contactEmail" name="email"
+                                    placeholder="name@domain.com" />
+                            </div>
+                            <div class="form-group">
+                                <fieldset class="form-group">
+                                    <legend class="form-group col-form-label">Contact Preference</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="emailPrefered" id="emailPrefered"
+                                            value="email">
+                                        <label class="form-check-label" for="emailPrefered">Email</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="phonePrefered" id="phonePrefered"
+                                            value="phone">
+                                        <label class="form-check-label" for="phonePrefered">Phone</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                <label for="specialEvent">Which event are you planning to attend? <em>(Please choose only one. To attend more than one event, please make separate reservations)</em></label>
+                                <select class="form-control" id="specialEvent">
+                                    <option>Choose One:</option>
+                                    <option>Harry's Birthday Pub Crawl</option>
+                                    <option>Dobby's Tea Party</option>
+                                    <option>Escape the Chamber of Secrets</option>
+                                    <option>Ziplining with Gryffindor</option>
+                                    <option>Potions Class with Slytherin</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="adultsEvent">Number of Adults <em>(Proof of Age Required for Some Events)</em></label>
+                                <input type="number" class="form-control flex-fill mr-2" id="adultsOnlyEvent" name="adults"
+                                    placeholder="Number of Adults" />
+                            </div>
+                            <div class="form group">
+                                 <label for="childrenEvent">Number of Children <em>(guests 12 & under)</em></label>
+                                <input type="number" class="form-control flex-fill mr-2" id="childrensEvent"
+                                    name="adults" placeholder="Number of Children" />
+                            </div>
+                        <br><br><p><strong>Payment will be collected on-site at time of event.</strong></p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-dark" style="background-color: maroon;">Reserve Spot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Special Event Modal-->
+    <!--End of Modals-->
+    
+    
     <!--Events by House Accordian-->
-    <h1 class="logo">Events by House</h1>
-    <div id="accordion">
-        <div class="card text-center">
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                    <button class="btn btn-lg btn-danger lumos" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        Gryffindor
-                    </button>
-                </h5>
-            </div>
-
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-sm-4 order-sm-last col-md-3 text-center">
-                            <h2 class="HP">Zipline</h2>
-                            <p class="lumos"> with Minerva McGonagall and Nearly Headless Nick</p>
-                            <button type="button" class="btn btn-sm btn-danger lumos">Reserve Your Spot</button>
-                        </div>
-                        <div class="col">
-                            <div class="media">
-                                <img class="d-flex col-md-3" src="images/ziplinecropped.png" alt="Zipline" />
-                                <div class="media-body align-self-center">
-
-                                    <p class="d-none d-md-block"> Come fly over Hogwarts in this zipline adventure. Cost
-                                        is $125/wizard. Limited spots available.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <h1 class="logo">Events by House</h1>
+        <div id="accordion">
+            <div class="card text-center">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-lg btn-danger lumos" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne" style="background-color: maroon;">
+                            Gryffindor
+                        </button>
+                    </h5>
                 </div>
-            </div>
-        </div>
-        <div class="card text-center">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn btn-lg btn-warning lumos collapsed" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Hufflepuff
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-sm-4 order-sm-last col-md-3 text-center">
-                            <h2 class="HP">Movie Night</h2>
-                            <p class="lumos"> with Professor Sprout and the Fat Friar</p>
-                            <button type="button" class="btn btn-sm btn-warning lumos">See Movie Schedule</button>
-                        </div>
-                        <div class="col">
-                            <div class="media">
-                                <img class="d-flex col-md-3" src="images/movie-nightcropped.png" alt="Movie" />
-                                <div class="media-body align-self-center">
-
-                                    <p class="d-none d-md-block">Join Professor Sprout, the Fat Friar, and your fellow
-                                        Hufflepuffs every Thursday at 6:00pm for a movie night! Admission is free and
-                                        all drinks and appetizers are half price!
-                                    </p>
-                                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 order-sm-last col-md-3 text-center">
+                                <h2 class="HP">Zipline</h2>
+                                <p class="lumos"> with Minerva McGonagall and Nearly Headless Nick</p>
+                                <button type="button" class="btn btn-sm btn-danger lumos" style="background-color: maroon;" data-toggle="modal" data-target="#specialEventModal">Reserve Your Spot</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card text-center">
-            <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                    <button class="btn btn-lg btn-primary lumos collapsed" data-toggle="collapse"
-                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Ravenclaw
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-sm-4 order-sm-last col-md-3 text-center">
-                            <h2 class="HP">Book Club</h2>
-                            <p class="lumos"> with Professor Flitwick and Helena Ravenclaw</p>
-                            <button type="button" class="btn btn-sm btn-primary lumos">See Our Reading List</button>
-                        </div>
-                        <div class="col">
-                            <div class="media">
-                                <img class="d-flex col-md-3" src="images/bookcropped.png" alt="Zipline" />
-                                <div class="media-body align-self-center">
+                            <div class="col">
+                                <div class="media">
+                                    <img class="d-flex col-md-3" src="images/ziplinecropped.png" alt="Zipline" />
+                                    <div class="media-body align-self-center">
 
-                                    <p class="d-none d-md-block"> Join Professor Flitwick, Helena Ravenclaw, and your
-                                        fellow Ravenclaws the first Tuesday of every month at 6:00pm for a book club!
-                                        Admission is free and all drinks and appetizers are half price!
-                                    </p>
+                                        <p class="d-none d-md-block"> Come fly over Hogwarts in this zipline adventure. Cost
+                                            is $125/wizard. Limited spots available.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -340,33 +520,100 @@
                 </div>
             </div>
             <div class="card text-center">
-                <div class="card-header" id="headingFour">
+                <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                        <button class="btn btn-lg btn-success lumos collapsed" data-toggle="collapse"
-                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Slytherin
+                        <button class="btn btn-lg btn-warning lumos collapsed" data-toggle="collapse"
+                            data-target="#collapseTwo" style="background-color: gold;" aria-expanded="false" aria-controls="collapseTwo">
+                            Hufflepuff
                         </button>
                     </h5>
                 </div>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-sm-4 order-sm-last col-md-3 text-center">
-                            <h2 class="HP">Potions Class</h2>
-                            <p class="lumos"> with Professor Snape and Peeves</p>
-                            <button type="button" class="btn btn-sm btn-success lumos">Reserve Your Spot</button>
-                        </div>
-                        <div class="col">
-                            <div class="media">
-                                <img class="d-flex col-md-3" src="images/moscow-mule.png" alt="Zipline" />
-                                <div class="media-body align-self-center">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 
-                                    <p class="d-none d-md-block"> Intersted in mastering your potion making skills?
-                                        Severus and Peeves team up to teach aspiring witches and wizards the art of
-                                        bartending. This is a 21+ event. Cost is $75/wizard. Proof of age will be
-                                        required. Limited spots available.
-                                    </p>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 order-sm-last col-md-3 text-center">
+                                <h2 class="HP">Movie Night</h2>
+                                <p class="lumos"> with Professor Sprout and the Fat Friar</p>
+                                <button type="button" class="btn btn-sm lumos" style="background-color: gold;" data-toggle="modal" data-target="#movieModal">See Movie Schedule</button>
+                            </div>
+                            <div class="col">
+                                <div class="media">
+                                    <img class="d-flex col-md-3" src="images/movie-nightcropped.png" alt="Movie" />
+                                    <div class="media-body align-self-center">
+
+                                        <p class="d-none d-md-block">Join Professor Sprout, the Fat Friar, and your fellow
+                                            Hufflepuffs every Thursday at 6:00pm for a movie night! Admission is free and
+                                            all drinks and appetizers are half price!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-lg btn-primary lumos collapsed" data-toggle="collapse"
+                            data-target="#collapseThree" style="background-color: navy;" aria-expanded="false" aria-controls="collapseThree">
+                            Ravenclaw
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 order-sm-last col-md-3 text-center">
+                                <h2 class="HP">Book Club</h2>
+                                <p class="lumos"> with Professor Flitwick and Helena Ravenclaw</p>
+                                <button type="button" class="btn btn-sm btn-primary lumos" style="background-color: navy;">See Our Reading List</button>
+                            </div>
+                            <div class="col">
+                                <div class="media">
+                                    <img class="d-flex col-md-3" src="images/bookcropped.png" alt="Zipline" />
+                                    <div class="media-body align-self-center">
+
+                                        <p class="d-none d-md-block"> Join Professor Flitwick, Helena Ravenclaw, and your
+                                            fellow Ravenclaws the first Tuesday of every month at 6:00pm for a book club!
+                                            Admission is free and all drinks and appetizers are half price!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-lg btn-success lumos collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" style="background-color: darkgreen;" aria-expanded="false" aria-controls="collapseFour">
+                                Slytherin
+                            </button>
+                        </h5>
+                    </div>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 order-sm-last col-md-3 text-center">
+                                <h2 class="HP">Potions Class</h2>
+                                <p class="lumos"> with Professor Snape and Peeves</p>
+                                <button type="button" class="btn btn-sm btn-success lumos" style="background-color: darkgreen;" data-toggle="modal" data-target="#specialEventModal">Reserve Your Spot</button>
+                            </div>
+                            <div class="col">
+                                <div class="media">
+                                    <img class="d-flex col-md-3" src="images/moscow-mule.png" alt="Zipline" />
+                                    <div class="media-body align-self-center">
+
+                                        <p class="d-none d-md-block"> Intersted in mastering your potion making skills?
+                                            Severus and Peeves team up to teach aspiring witches and wizards the art of
+                                            bartending. This is a 21+ event. Cost is $75/wizard. Proof of age will be
+                                            required. Limited spots available.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -374,9 +621,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!--End of Events by House Accordian-->
+    
     <footer>
-        <!--Footer mobile & small-->
+    <!--Footer mobile & small-->
         <div class="conatiner-fluid d-block d-md-none lumos">
             <div class="row bg-light p-3 justify-content-center">
                 <div class="col">
@@ -404,7 +652,7 @@
                 <p>© 2022 Incendio, Inc. All Rights Reserved</p>
             </div>
         </div>
-        <!--Footer medium and up-->
+    <!--Footer medium and up-->
         <div class="conatiner-fluid d-none d-md-block lumos">
             <div class="row bg-light p-3 justify-content-center">
                 <div class="col">
@@ -430,7 +678,6 @@
                 <p>© 2022 Incendio, Inc. All Rights Reserved</p>
             </div>
         </div>
-
     </footer>
 
 
