@@ -74,12 +74,16 @@
         }
 
         table, td {
-            border: 1px solid gold;
+            border: 1px solid black;
             padding: 6px;
         }
 
         .tableFill {
             background-color: rgba(255, 215, 0, .2) ;
+        }
+
+        .tableFillBlue {
+            background-color: rgba(0, 0, 128, .2);
         }
     </style>
 
@@ -277,6 +281,55 @@
             </div>
         </div>
         <!--End of Hufflepuff Movie Night Modal-->
+        <!--Ravenclaw Book Club Modal-->
+        <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: navy;">
+                        <h5 class="modal-title text-light lumos" id="bookModalLabel">What are we reading?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td>February 1</td>
+                                <td>Harry Potter and the Sorcerer's Stone</td>
+                            </tr>
+                            <tr class="tableFillBlue">
+                                <td>March 1</td>
+                                <td>Harry Potter and the Chamber of Secrets</td>
+                            </tr>
+                            <tr>
+                                <td>April 5</td>
+                                <td>Harry Potter and the Prisoner of Azkaban</td>
+                            </tr>
+                            <tr class="tableFillBlue">
+                                <td>May 3</td>
+                                <td>Harry Potter and the Goblet of Fire</td>
+                            </tr>
+                            <tr>
+                                <td>June 7</td>
+                                <td>Harry Potter and the Order of the Phoenix</td>
+                            </tr>
+                            <tr class="tableFillBlue">
+                                <td>July 5</td>
+                                <td>Harry Potter and the Half Blood Prince</td>
+                            </tr>
+                            <tr>
+                                <td>August 2</td>
+                                <td>Harry Potter and the Dathly Hallows</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Ravenclaw Book Blub Modal-->
         <!--Escape Room Modal-->
         <div class="modal fade" id="escapeModal" tabindex="-1" aria-labelledby="escapeModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -568,7 +621,7 @@
                             <div class="col-sm-4 order-sm-last col-md-3 text-center">
                                 <h2 class="HP">Book Club</h2>
                                 <p class="lumos"> with Professor Flitwick and Helena Ravenclaw</p>
-                                <button type="button" class="btn btn-sm btn-primary lumos" style="background-color: navy;">See Our Reading List</button>
+                                <button type="button" class="btn btn-sm btn-primary lumos" style="background-color: navy;" data-toggle="modal" data-target="#bookModal">See Our Reading List</button>
                             </div>
                             <div class="col">
                                 <div class="media">
