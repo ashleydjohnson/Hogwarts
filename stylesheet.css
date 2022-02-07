@@ -77,20 +77,22 @@ hr {
     min-height: 200px;
 }
 
-#h3Feedback {
+#h1Feedback {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
 }
 
 #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
   padding-left: 10px;
-  font-family: 'Lumos', Times, serif;
+  font-family: "IncendioFont";
   text-align: right;
 }
 
 @media (max-width: 760px) {
     #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
         padding-left: 10px;
-        font-family: 'Lumos', Times, serif;
+        font-family: "IncendioFont";
         text-align: left;
     }
   }
