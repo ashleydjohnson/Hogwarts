@@ -112,3 +112,13 @@ hr {
   #menu .card .card-header .btn-link.collapsed::after{
     content:"\f107";
   }
+
+  #menu .card .card-header p {
+    color: grey;
+    line-height: 50%;
+  }
+
+  #menu .card {
+    border-right: none;
+    border-left: none;
+  }
