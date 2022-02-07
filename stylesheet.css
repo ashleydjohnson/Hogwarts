@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: "Lumos";
-    src: url(./fonts/LUMOS.TTF);
+    src: url(./fonts/LUMOS.TTF) format('truetype');
 }
 
 @font-face {
     font-family: "IncendioFont";
-    src: url(./fonts/CELTG___.TTF);
+    src: url(./fonts/CELTG___.TTF) format('trutype');
 }
 
 .logo {
@@ -22,7 +22,6 @@
 .lumos {
   font-family: "Lumos";
 }
-
 .HP {
   font-family: "HarryP";
 }
@@ -94,4 +93,8 @@ hr {
         text-align: left;
     }
   }
+
+.card-body h2 {
+  font-size: 3rem;
+}
 
