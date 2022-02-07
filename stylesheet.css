@@ -32,6 +32,11 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+.carousel-item {
+  height: 20rem;
+  position: relative;
+  background-color: aquamarine;
+}
 
 .carousel-caption h2{
   font-size:70px;

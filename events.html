@@ -43,47 +43,85 @@
         </div>
     </nav>
     <!--End of Navbar-->
+    <!--Carousel Styling-->
+    <style>
+        .carousel-item {
+            height: 20rem;
+            position: relative;
+            color: white;
+            background: black;
+        }
+
+        .containerContent {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: .5;
+        }
+    </style>
+
     <!--Banner Carousel-->
-    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+    <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#eventCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#eventCarousel" data-slide-to="1"></li>
+            <li data-target="#eventCarousel" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-caption">
+            <div class="carousel-item active" data-interval="8000">
+                <div class="overlay-image" style="background-image:url(./images/ravenclaw-dorms.webp)">
+                </div>
+                <div class="container containerContent">
                     <h1 class="HP"> Corporate Events</h1>
-                    <p class="">Every Incendio private room comes with everything you need to host a special company
-                        meeting. Choose your house and let our wizards take it from there.</p>
+                    <p>Every Incendio private room comes with everything <br>you need to host a special company
+                        meeting. <br>Choose your house and let our wizards take it from there.</p>
                     <button type="button" class="btn btn-primary lumos"> Contact Our Planning Wizard</button>
                 </div>
-                <img class="d-block w-100 img-fluid" src="images/ravenclaw-dorms.webp" alt="Corporate Events">
             </div>
-            <div class="carousel-item">
-                <div class="carousel-caption">
-                    <h1 class="HP"> Birthday Parties</h1>
-                    <p>Incendio birthday parties are perfect for all ages! Our customizable food and drink menu will be
-                        sure to please the palate of any witch or wizard.</p>
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image" style="background-image:url(./images/hufflepuff-dorm.jpeg)">
+                </div>
+                <div class="container containerContent">
+                    <h1 class="HP">Birthday Parties</h1>
+                    <p>Incendio birthday parties are perfect for all ages! <br>Our customizable food and drink menu will be
+                        sure <br>to please the palate of any witch or wizard.</p>
                     <button type="button" class="btn btn-warning lumos"> Contact Our Planning Wizard</button>
                 </div>
-                <img class="d-block w-100 img-fluid" src="images/hufflepuff-dorm.jpeg" alt="Birthday Parties">
             </div>
-            <div class="carousel-item">
-                <div class="carousel-caption">
+            <div class="carousel-item" data-interval="8000">
+                <div class="overlay-image" style="background-image:url(./images/slytherin-dorm.jpeg)">
+                </div>
+                <div class="container containerContent">
                     <h1 class="HP">Team-Building Events</h1>
-                    <p>With customizable games and challenges, our Team-Bulding events are the perfect way to get your
+                    <p>With customizable games and challenges, our <br>Team-Bulding events are the perfect way to get <br>your
                         team out of the office and in to some serious fun.</p>
                     <button type="button" class="btn btn-success lumos"> Contact Our Planning Wizard</button>
                 </div>
-                <img class="d-block w-100 img-fluid" src="images/slytherin-dorm.jpeg" alt="Team Building">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <a href="#eventCarousel" class="carousel-control-prev" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <a href="#eventCarousel" class="carousel-control-next" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Previous</span>
         </a>
     </div>
     <!--End of Carousel-->
+
+
     <!--Upcoming Events Cards-->
     <div class="container">
         <div class="row">
@@ -160,9 +198,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>We’ll get dressed up and have some tea. 
-Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, Winky, and the other elves of Hogwarts in a lavish display of hospitality and friendship.
-</p>
+                    <p>We’ll get dressed up and have some tea.
+                        Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, Winky, and the
+                        other elves of Hogwarts in a lavish display of hospitality and friendship.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -184,7 +223,9 @@ Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, W
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Hidden in the shadow of the basilisk lies the truth to save young Ginny. Do you know the spell to stop Tom Riddle, or will your body lie in the chamber forever?  You have 60 minutes to find clues, solve puzzles, and ESCAPE the Chamber of Secrets!*</p>
+                    <p>Hidden in the shadow of the basilisk lies the truth to save young Ginny. Do you know the spell to
+                        stop Tom Riddle, or will your body lie in the chamber forever? You have 60 minutes to find
+                        clues, solve puzzles, and ESCAPE the Chamber of Secrets!*</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -334,68 +375,68 @@ Oh, what fun this party will be! <br><br>Please be our guest as we join Dobby, W
             </div>
         </div>
     </div>
-        <footer>
-            <!--Footer mobile & small-->
-            <div class="conatiner-fluid d-block d-md-none lumos">
-                <div class="row bg-light p-3 justify-content-center">
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Contact Us</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Locations</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="shop.html">Shop</a>
-                    </div>
+    <footer>
+        <!--Footer mobile & small-->
+        <div class="conatiner-fluid d-block d-md-none lumos">
+            <div class="row bg-light p-3 justify-content-center">
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Contact Us</a>
                 </div>
-                <div class="row p-3 justify-content-center">
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Sitemap</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Legal Notice</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Privacy Notice</a>
-                    </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Locations</a>
                 </div>
-                <div class="row p-3 justify-content-center">
-                    <p>© 2022 Incendio, Inc. All Rights Reserved</p>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="shop.html">Shop</a>
                 </div>
             </div>
-            <!--Footer medium and up-->
-            <div class="conatiner-fluid d-none d-md-block lumos">
-                <div class="row bg-light p-3 justify-content-center">
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Contact Us</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Locations</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="shop.html">Shop</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Sitemap</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Legal Notice</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-decoration-none text-reset" href="#">Privacy Notice</a>
-                    </div>
+            <div class="row p-3 justify-content-center">
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Sitemap</a>
                 </div>
-                <div class="row p-3 justify-content-center">
-                    <p>© 2022 Incendio, Inc. All Rights Reserved</p>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Legal Notice</a>
+                </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Privacy Notice</a>
                 </div>
             </div>
+            <div class="row p-3 justify-content-center">
+                <p>© 2022 Incendio, Inc. All Rights Reserved</p>
+            </div>
+        </div>
+        <!--Footer medium and up-->
+        <div class="conatiner-fluid d-none d-md-block lumos">
+            <div class="row bg-light p-3 justify-content-center">
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Contact Us</a>
+                </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Locations</a>
+                </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="shop.html">Shop</a>
+                </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Sitemap</a>
+                </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Legal Notice</a>
+                </div>
+                <div class="col">
+                    <a class="text-decoration-none text-reset" href="#">Privacy Notice</a>
+                </div>
+            </div>
+            <div class="row p-3 justify-content-center">
+                <p>© 2022 Incendio, Inc. All Rights Reserved</p>
+            </div>
+        </div>
 
-        </footer>
+    </footer>
 
 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
