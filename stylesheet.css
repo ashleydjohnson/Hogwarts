@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: "IncendioFont";
-    src: url(./fonts/CELTG___.TTF) format('truetype');
+    src: url(./fonts/CELTG___.TTF) format('trutype');
 }
 
 .logo {
@@ -22,7 +22,6 @@
 .lumos {
   font-family: "Lumos";
 }
-
 .HP {
   font-family: "HarryP";
 }
@@ -32,6 +31,10 @@
   border-radius: 100%;
   margin-left: 15px;
   margin-right: 15px;
+}
+.carousel-item {
+  height: 20rem;
+  position: relative;
 }
 
 .carousel-caption h2{
@@ -97,3 +100,27 @@ hr {
     }
   }
 
+.card-body h2 {
+  font-size: 3rem;
+}
+
+  #menu .card .card-header .btn-link::after{
+    content:"\f106";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    float: right;
+  }
+  
+  #menu .card .card-header .btn-link.collapsed::after{
+    content:"\f107";
+  }
+
+  #menu .card .card-header p {
+    color: grey;
+    line-height: 50%;
+  }
+
+  #menu .card {
+    border-right: none;
+    border-left: none;
+  }
