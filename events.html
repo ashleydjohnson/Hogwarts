@@ -72,6 +72,15 @@
         .btn {
             margin: 3px;
         }
+
+        table, td {
+            border: 1px solid gold;
+            padding: 6px;
+        }
+
+        .tableFill {
+            background-color: rgba(255, 215, 0, .2) ;
+        }
     </style>
 
     <!--Banner Carousel-->
@@ -215,6 +224,59 @@
             </div>
         </div>
         <!--End of Tea Party Modal-->
+        <!--Hufflepuff Movie Night Modal-->
+        <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: gold;">
+                        <h5 class="modal-title text-dark lumos" id="movieModalLabel">What are we watching?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td>February 10</td>
+                                <td>Harry Potter and the Sorcerer's Stone</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>February 17</td>
+                                <td>Harry Potter and the Chamber of Secrets</td>
+                            </tr>
+                            <tr>
+                                <td>February 24</td>
+                                <td>Harry Potter and the Prisoner of Azkaban</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>March 3</td>
+                                <td>Harry Potter and the Goblet of Fire</td>
+                            </tr>
+                            <tr>
+                                <td>March 10</td>
+                                <td>Harry Potter and the Order of the Phoenix</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>March 17</td>
+                                <td>Harry Potter and the Half Blood Prince</td>
+                            </tr>
+                            <tr>
+                                <td>March 24</td>
+                                <td>Harry Potter and the Dathly Hallows part 1</td>
+                            </tr>
+                            <tr class="tableFill">
+                                <td>April 3</td>
+                                <td>Harry Potter and the Dathly Hallows part 2</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Hufflepuff Movie Night Modal-->
         <!--Escape Room Modal-->
         <div class="modal fade" id="escapeModal" tabindex="-1" aria-labelledby="escapeModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -473,7 +535,7 @@
                             <div class="col-sm-4 order-sm-last col-md-3 text-center">
                                 <h2 class="HP">Movie Night</h2>
                                 <p class="lumos"> with Professor Sprout and the Fat Friar</p>
-                                <button type="button" class="btn btn-sm btn-warning lumos" style="background-color: gold;">See Movie Schedule</button>
+                                <button type="button" class="btn btn-sm lumos" style="background-color: gold;" data-toggle="modal" data-target="#movieModal">See Movie Schedule</button>
                             </div>
                             <div class="col">
                                 <div class="media">
