@@ -1,3 +1,39 @@
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+}
+@font-face {
+    font-family: "HarryP";
+    src: url(./fonts/HARRYP__.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: "Lumos";
+    src: url(./fonts/LUMOS.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: "IncendioFont";
+    src: url(./fonts/CELTG___.TTF) format('truetype');
+}
+
+.logo {
+  font-family: "IncendioFont";
+}
+.lumos {
+  font-family: "Lumos";
+}
+
+.HP {
+  font-family: "HarryP";
+}
+
+
+
+
+
+
+
+
 *{
     padding:0;
     margin: 0;
@@ -78,11 +114,16 @@ transition:0.4s
   color: #fff;
 }
 
+#product-items{
+   display:flex;
+  justify-content: space-around;
+  gap: 15px;
+  }
+
+
+
 .single-item{
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  cursor: pointer;
+   cursor: pointer;
   
 }
 
