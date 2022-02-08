@@ -1,3 +1,39 @@
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+}
+@font-face {
+    font-family: "HarryP";
+    src: url(./fonts/HARRYP__.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: "Lumos";
+    src: url(./fonts/LUMOS.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: "IncendioFont";
+    src: url(./fonts/CELTG___.TTF) format('truetype');
+}
+
+.logo {
+  font-family: "IncendioFont";
+}
+.lumos {
+  font-family: "Lumos";
+}
+
+.HP {
+  font-family: "HarryP";
+}
+
+
+
+
+
+
+
+
 *{
     padding:0;
     margin: 0;
@@ -78,11 +114,16 @@ transition:0.4s
   color: #fff;
 }
 
+#product-items{
+   display:flex;
+  justify-content: space-around;
+  gap: 15px;
+  }
+
+
+
 .single-item{
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  cursor: pointer;
+   cursor: pointer;
   
 }
 
@@ -112,11 +153,16 @@ transition:0.4s
 /*!!!!!!!!!!!!!!START OF PRODUCT PAGE!!!!!!!!!!!!*/
 
 #banners{
-  background-image: url("images/store/ToResize/bg3.jpg");
-  padding: 25px;
+ 
+  background-image:url("images/store/ToResize/bg3.jpg");
+   display:flex;
+   justify-content: center;
+   min-height:250px;
+   
 }
 
-.header-title{
+.prodhead{
+  margin-top: 20px;
   color: goldenrod;
   text-align: center;
 }
@@ -126,20 +172,25 @@ transition:0.4s
   border-color: white;
   border-radius: 10px;
   border-width: 3px;
- background-image: repeating-linear-gradient(45deg,#222F5B,#1A472A, #EEBA30, darkred )
-}
+ background-image: repeating-linear-gradient(45deg,#222F5B,#1A472A, #EEBA30, darkred );
+ margin-top: 20px;
+ }
 
 .gryfbtn{
 background-image:repeating-linear-gradient(45deg, darkred, yellow);
  border-color: white;
   border-radius: 10px;
   border-width: 3px;
+   margin-left:10px;
+    margin-top: 20px;
 }
 .slybtn{
 background-image:radial-gradient( #1A472A 45%, #5d5d5d);
  border-color: white;
   border-radius: 10px;
   border-width: 3px;
+   margin-left:10px;
+   margin-top: 20px;
 }
 .ravenbtn{
 background-image:radial-gradient( #222F5B 50%, #5D5D5D);
@@ -147,12 +198,16 @@ background-image:radial-gradient( #222F5B 50%, #5D5D5D);
   border-radius: 10px;
   border-width: 3px;
   padding:18px;
+   margin-left:10px;
+   margin-top: 20px;
 }
 .huffbtn{
 background-image:radial-gradient(#FFDB00 50%, #60605c, black);
  border-color: white;
   border-radius: 10px;
   border-width: 3px;
+  margin-left:10px;
+  margin-top: 20px;
 }
 
 .allbtn:hover,.gryfbtn:hover,.slybtn:hover,.ravenbtn:hover,.huffbtn:hover{
@@ -165,16 +220,11 @@ background-image:radial-gradient(#FFDB00 50%, #60605c, black);
 
 .crest:hover{
    
- padding:3px; 
-    margin:15px; 
+ padding:0.2px; 
+  
   }
 
  
-  #myproducts{
-    padding: 40px;
-    margin: 0
-  }
-
   .btn-default:active .filter-button:active{
     background-color:goldenrod;
   }
@@ -185,8 +235,7 @@ background-image:radial-gradient(#FFDB00 50%, #60605c, black);
 
   .product:hover{
     padding: 10px;
-  
-    transition: 0.4s;
+      transition: 0.4s;
   }
 
   h6{
