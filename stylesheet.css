@@ -74,13 +74,33 @@ hr {
     margin: 50px auto;
 }
 
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+.card-body h2 {
+  font-size: 3rem;
 }
 
-#h1Feedback {
+  #menu .card .card-header .btn-link::after{
+    content:"\f106";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    float: right;
+  }
+  
+  #menu .card .card-header .btn-link.collapsed::after{
+    content:"\f107";
+  }
+
+  #menu .card .card-header p {
+    color: grey;
+    line-height: 50%;
+  }
+
+  #menu .card {
+    border-right: none;
+    border-left: none;
+  }
+
+
+  #h1Feedback {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-style: normal;
@@ -115,37 +135,8 @@ hr {
     transform: rotate(25deg);
     position: absolute;
     right: 20%;
+    object-fit: contain;
 }
-
-.customSpan {
-    position: relative;
-    z-index: 1;
-}
-
-.card-body h2 {
-  font-size: 3rem;
-}
-
-  #menu .card .card-header .btn-link::after{
-    content:"\f106";
-    font-family: 'Font Awesome 5 free';
-    font-weight: 900;
-    float: right;
-  }
-  
-  #menu .card .card-header .btn-link.collapsed::after{
-    content:"\f107";
-  }
-
-  #menu .card .card-header p {
-    color: grey;
-    line-height: 50%;
-  }
-
-  #menu .card {
-    border-right: none;
-    border-left: none;
-  }
 
 
 /*  About Us custom width  */
