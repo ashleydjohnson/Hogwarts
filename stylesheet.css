@@ -99,6 +99,15 @@ hr {
     border-left: none;
   }
 
+  #menu h4 {
+    font-weight: bolder;
+  }
+
+  #menu .card-body p{
+    border-bottom: .1rem solid lightgray;
+    padding-bottom: 1rem;
+  }
+
 
   #h1Feedback {
   text-align: center;
