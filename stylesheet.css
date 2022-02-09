@@ -92,8 +92,6 @@ hr {
   text-align: right;
 }
 
-
-
   /* About Us Section */
 .about {
     padding: 3% 15% 15%;
@@ -114,7 +112,7 @@ hr {
 /* About Us Image */
 #about-image {
     width: 50%;
-    transform: rotate(15deg);
+    transform: rotate(25deg);
     position: absolute;
     right: 20%;
 }
