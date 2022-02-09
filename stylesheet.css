@@ -92,13 +92,37 @@ hr {
   text-align: right;
 }
 
-@media (max-width: 760px) {
-    #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
-        padding-left: 10px;
-        font-family: "IncendioFont";
-        text-align: left;
-    }
-  }
+
+
+  /* About Us Section */
+.about {
+    padding: 3% 15% 15%;
+    text-align: left;
+}
+
+.big-heading {
+    font-family: "Ariel, sans-serif";  
+    font-size: 3.5rem;   
+    line-height: 1.5;  
+}
+
+/* Containers */
+.containerCustom {
+    padding: 7% 15%;
+}
+
+/* About Us Image */
+#about-image {
+    width: 50%;
+    transform: rotate(15deg);
+    position: absolute;
+    right: 20%;
+}
+
+.customSpan {
+    position: relative;
+    z-index: 1;
+}
 
 .card-body h2 {
   font-size: 3rem;
@@ -123,4 +147,25 @@ hr {
   #menu .card {
     border-right: none;
     border-left: none;
+  }
+
+
+/*  About Us custom width  */
+  @media (max-width: 576px) {
+    #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
+        padding-left: 10px;
+        font-family: "IncendioFont";
+        text-align: left;
+    }
+
+    #about-image {
+      position: static;
+      transform: rotate(0);
+      padding-top: 10px;
+    }
+
+    .about{
+      padding: auto;
+      text-align: left;
+    }
   }
