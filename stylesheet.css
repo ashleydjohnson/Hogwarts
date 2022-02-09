@@ -77,7 +77,7 @@ hr {
 .card-body h2 {
   font-size: 3rem;
 }
-
+/*menu card styling*/
   #menu .card .card-header .btn-link::after{
     content:"\f106";
     font-family: 'Font Awesome 5 free';
