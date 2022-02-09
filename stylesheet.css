@@ -78,14 +78,14 @@ hr {
   font-size: 3rem;
 }
 /*menu card styling*/
-  #menu .card .card-header .btn-link::after{
+#menu .card .card-header .btn-link p::after{
     content:"\f106";
     font-family: 'Font Awesome 5 free';
     font-weight: 900;
     float: right;
   }
   
-  #menu .card .card-header .btn-link.collapsed::after{
+  #menu .card .card-header .btn-link.collapsed p::after{
     content:"\f107";
   }
 
@@ -107,6 +107,7 @@ hr {
     border-bottom: .1rem solid lightgray;
     padding-bottom: 1rem;
   }
+
 
 
   #h1Feedback {
