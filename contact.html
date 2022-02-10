@@ -25,42 +25,39 @@
 
     <!---Navbar-->
     <nav class="navbar navbar-light bg-light navbar-expand">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <!---logo for small screen and up-->
                 <img src="images/incendioLgLogox2-transparent.png" class="img-fluid d-none d-sm-block"
                     style="height:50%; width:50%;">
-                <!---log for xs screen -->
+                <!---logo for xs screen -->
                 <img src="images/incendioSmLogo-transparent.png" class="img-fluid d-block d-sm-none"
                     style="height:75%; width:75%;">
             </a>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav lumos">
                 <li class="nav-link d-none d-sm-block"><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
                 <li class="nav-link"><a href="menu.html" class="text-decoration-none text-reset">Menu</a></li>
                 <li class="nav-link"><a href="events.html" class="text-decoration-none text-reset">Events</a></li>
                 <li class="nav-link"><a href="shop.html" class="text-decoration-none text-reset">Shop</a></li>
-                <li class="nav-link"><a href="#" class="text-decoration-none text-reset">About</a></li>
-                <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Contact</a></li>
+                <li class="nav-link"><a href="about.html" class="text-decoration-none text-reset">About</a></li>
+                <li class="nav-link active"><a href="contact.html" class="text-decoration-none text-reset">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="banner">
         <span class="text-center">
-            <h1 class="HP">Contact US</h1>
-            <a class="btn btn-dark btn-lg lumos" href="#" role="button">Contact Us</a>
+            <h1 class="HP">Contact Us</h1>
         </span>
     </div>
-
-
 
     <div class="container">
         <div class="row row-content">
             <div class="col-6">
                 <h3>Questions?</h3>
                 <p>Please feel free to reach out to us with questions or comments. </p>
-                <p><strong>Call us:</strong> 605-475-6961<br><strong>Email: </strong><a href="mailto:Admin@Hogwarts.org">
-                     Admin@Hogwarts.org</a><br></p>
+                <p><strong>Call us:</strong> 605-475-6961<br><strong>Email: </strong><a href="mailto:query@Hogwarts.org">
+                     query@Hogwarts.org</a><br></p>
             </div>
             <div class="col-3">
                 <img src="images/Hogwarts-distance.jpg" class="img-fluid mx-auto rounded d-block" alt="Hogwarts castle at a distance">
@@ -79,7 +76,7 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-12">
-                <h3 id="h3Feedback">Send us your Feedback</h3>
+                <h1 id="h1Feedback">Send us your Feedback</h1>
                 <hr />
             </div>
             <div class="col-sm-10">
@@ -91,13 +88,13 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="lastName" class="col-md-2 col-form-label" id="lnameLabel">Last Name</label>
+                        <label for="lastName" class="col-md-2 col-form-label lumos" id="lnameLabel">Last Name</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="areaCode" class="col-md-2 col-form-label" id="contactTelLabel">Contact Tel.</label>
+                        <label for="areaCode" class="col-md-2 col-form-label lumos" id="contactTelLabel">Contact Tel.</label>
                         <div class="col-5 col-md-3">
                             <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
                         </div>
@@ -106,14 +103,14 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="email" class="col-md-2 col-form-label" id="emailLabel">Email</label>
+                        <label for="email" class="col-md-2 col-form-label lumos" id="emailLabel">Email</label>
                         <div class="col-md-10">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col offset-md-2">
-                            Would you like to be contacted?
+                            <i class="lumos">Would you like to be contacted?</i>
                             <div class="form-check form-check-inline">
                                 <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
                                 <label for="contactYes" class="form-check-label">Yes</label>
@@ -125,14 +122,14 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label" id="feedbackLabel">Your Feedback</label>
+                        <label for="feedback" class="col-md-2 col-form-label lumos" id="feedbackLabel">Your Feedback</label>
                         <div class="col-md-10">
                             <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            <button type="submit" class="btn btn-primary logo">Send Feedback</button>
                         </div>
                     </div>
                 </form>
@@ -153,7 +150,7 @@
         <!--footer start-->
     <footer>
         <!--Footer mobile & small-->
-        <div class="conatiner-fluid d-block d-md-none">
+        <div class="conatiner-fluid d-block d-md-none lumos">
             <div class="row bg-light p-3 justify-content-center">
                 <div class="col">
                     <a class="text-decoration-none text-reset" href="#">Contact Us</a>
@@ -181,9 +178,9 @@
             </div>
         </div>
         <!--Footer medium and up-->
-        <div class="conatiner-fluid d-none d-md-block">
+        <div class="conatiner-fluid d-none d-md-block lumos">
             <div class="row bg-light p-3 justify-content-center">
-                <div class="col">
+                <div class="col pl-5 ml-5">
                     <a class="text-decoration-none text-reset" href="#">Contact Us</a>
                 </div>
                 <div class="col">
@@ -198,7 +195,7 @@
                 <div class="col">
                     <a class="text-decoration-none text-reset" href="#">Legal Notice</a>
                 </div>
-                <div class="col">
+                <div class="col pr-3 mr-3">
                     <a class="text-decoration-none text-reset" href="#">Privacy Notice</a>
                 </div>
             </div>

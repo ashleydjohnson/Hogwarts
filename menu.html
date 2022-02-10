@@ -26,71 +26,67 @@
 <body>
     <!---Navbar-->
     <nav class="navbar navbar-light bg-light navbar-expand">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <!---logo for small screen and up-->
                 <img src="images/incendioLgLogox2-transparent.png" class="img-fluid d-none d-sm-block"
                     style="height:50%; width:50%;">
-                <!---log for xs screen -->
+                <!---logo for xs screen -->
                 <img src="images/incendioSmLogo-transparent.png" class="img-fluid d-block d-sm-none"
                     style="height:75%; width:75%;">
             </a>
-            <ul class="navbar-nav">
-                <li class="nav-link d-none d-sm-block"><a href="index.html"
-                        class="text-decoration-none text-reset">Home</a></li>
-                <li class="nav-link"><a href="#" class="text-decoration-none text-reset">Menu</a></li>
+            <ul class="navbar-nav lumos">
+                <li class="nav-link d-none d-sm-block"><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
+                <li class="nav-link active"><a href="menu.html" class="text-decoration-none text-reset">Menu</a></li>
                 <li class="nav-link"><a href="events.html" class="text-decoration-none text-reset">Events</a></li>
                 <li class="nav-link"><a href="shop.html" class="text-decoration-none text-reset">Shop</a></li>
-                <li class="nav-link"><a href="#" class="text-decoration-none text-reset">About</a></li>
+                <li class="nav-link"><a href="about.html" class="text-decoration-none text-reset">About</a></li>
                 <li class="nav-link"><a href="contact.html" class="text-decoration-none text-reset">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!--breadcrumbs-->
-    <div class="container bg-white">
+    <div class="container-fluid bg-white">
         <div class="row">
             <div class="col">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb bg-white">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html" style="color:maroon;">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="Menu">Menu</li>
                     </ol>
                 </nav>
             </div>
-            <div class="col ml-auto">
-                <a href="#" class="float-right">Print Menu</a>
+            <div class="col ml-auto pt-2">
+                <a href="#" class="float-right" style="color:maroon;">Print Menu</a>
             </div>
         </div>
-
-        <!--Print Menu Button-->
 
         <!--Header-->
 
         <div class="row">
             <div class="col">
-                <h2>Magical Menu</h2>
+                <h2 style="font-weight: bolder;">Magical Menu</h2>
             </div>
             <!--Buttons-->
             <div class="col ml-auto">
-                <a class="btn btn-outline-dark float-right m-1" href="#" style="border: .2rem solid #031a40; color:#031a40">Expand All Sections</a>
-                <a class="btn btn-dark float-right m-1" style="border: .2rem solid #031a40; background-color: #031a40;" href="#">Download Menu</a>
+                <a class="btn btn-dark float-right m-1" style="border: .2rem solid navy; background-color: navy;"
+                    href="#">Download Menu <i class="fas fa-file-pdf p-1"></i></a>
+                <a class="btn btn-outline-dark float-right m-1" href="#" style="border: .2rem solid #031a40; color:navy">Expand All Sections</a>
             </div>
         </div>
 
 
-        <!--Accordian-->
+        <!--Accordion-->
         <div class="accordion py-4" id="menu">
             <!--Spirited Potions-->
             <div class="card">
                 <div class="card-header bg-white">
-                    <h3>
                         <button class="btn btn-link btn-block text-decoration-none text-reset" data-toggle="collapse"
                             data-target="#collapseSpiritedPotions" aria-expanded="true"
-                            aria-controls="collapseSpiriedPotions" id="spiritedPotions" style="border-left: .5rem solid #1a472a;">
+                            aria-controls="collapseSpiriedPotions" id="spiritedPotions" style="border-left: .5rem solid darkgreen;">
                             <h3 class="text-left">Spirited Potions</h3>
                             <p class="text-left">These 21+ "potions" are for adults who want to have a magical time.</p>
                         </button>
-                    </h3>
                 </div>
 
                 <div id="collapseSpiritedPotions" class="collapse show" aria-labelledby="spiritedPotions"
@@ -298,7 +294,7 @@
                     <h3 class="mb-0">
                         <button class="btn btn-link btn-block collapsed text-decoration-none text-reset"
                             data-toggle="collapse" data-target="#collapseMain" aria-expanded="false"
-                            aria-controls="collapseMain" style="border-left: .5rem solid #031a40;">
+                            aria-controls="collapseMain" style="border-left: .5rem solid navy;">
                             <h3 class="text-left">Main Course</h3>
                             <p class="text-left">Main courses to fill you up and give you magical burps.</p>
                         </button>
@@ -366,7 +362,7 @@
                     <h3 class="mb-0">
                         <button class="btn btn-link btn-block collapsed text-decoration-none text-reset"
                             data-toggle="collapse" data-target="#collapseKids" aria-expanded="false"
-                            aria-controls="collapseKids" style="border-left: .5rem solid #1a472a;">
+                            aria-controls="collapseKids" style="border-left: .5rem solid darkgreen;">
                             <h3 class="text-left">Kids Menu</h3>
                             <p class="text-left">Small plates for the little wizards in your party.</p>
                         </button>
@@ -389,7 +385,7 @@
                                 <p>A basket of chicken broomsticks served with a full set of quidditch potato balls. Can
                                     you find the golden snitch? </p>
                                 <h4>Macaroni and Cheese <span style="float:right;">$12.50</span></h4>
-                                <p>A couldron of Macaroni and cheese served with your choice of fruit or vegetable
+                                <p> A couldron of Macaroni and cheese served with your choice of fruit or vegetable
                                     medly. Take your couldron home to make brew your next potion! </p>
                             </div>
                             <div class="col-md-3 col-12 my-auto">
@@ -454,6 +450,7 @@
                                 <h4>Snape's Holiday Blancmage <span style="float:right;">$12.50</span></h4>
                                 <p>Snape reminisced about this blancmage and you will too. This elegant vanilla custurd
                                     topped with our cherry centered snitch will delight your tastebuds!</p>
+                                <p class="font-weight-italic font-weight-bold text-right">$12.50</p>
                             </div>
                             <div class="col-md-3 col-12">
                                 <figure>
@@ -472,7 +469,7 @@
 
     <footer>
         <!--Footer mobile & small-->
-        <div class="conatiner-fluid d-block d-md-none">
+        <div class="conatiner-fluid d-block d-md-none lumos">
             <div class="row bg-light p-3 justify-content-center">
                 <div class="col">
                     <a class="text-decoration-none text-reset" href="#">Contact Us</a>
@@ -501,8 +498,8 @@
         </div>
         <!--Footer medium and up-->
         <div class="conatiner-fluid d-none d-md-block">
-            <div class="row bg-light p-3 justify-content-center">
-                <div class="col">
+            <div class="row bg-light p-3 justify-content-center lumos">
+                <div class="col pl-5 ml-5">
                     <a class="text-decoration-none text-reset" href="#">Contact Us</a>
                 </div>
                 <div class="col">
@@ -517,7 +514,7 @@
                 <div class="col">
                     <a class="text-decoration-none text-reset" href="#">Legal Notice</a>
                 </div>
-                <div class="col">
+                <div class="col pr-3 mr-3">
                     <a class="text-decoration-none text-reset" href="#">Privacy Notice</a>
                 </div>
             </div>
