@@ -121,18 +121,9 @@ transition:0.4s
   }
 
 
-
-.single-item{
-   cursor: pointer;
-  
+ .fa-cart-plus{
+ color: black;
 }
-
-.single-item:hover{
-background-color:white;
-color:maroon;
-transition:0.4s
-}
-
 .product-img{
   height: 500px;
   width:500px;
@@ -255,3 +246,4 @@ background-image:radial-gradient(#FFDB00 50%, #60605c, black);
        .fa-cart-plus:hover{
 background-color:gray
       }
+
