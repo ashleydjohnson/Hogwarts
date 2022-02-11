@@ -109,6 +109,7 @@ transition:0.4s
 
 #products{
   background:maroon;
+  padding-bottom: 12px;
 }
 .product-title{
   color: #fff;
@@ -129,8 +130,9 @@ transition:0.4s
   width:500px;
 }
 
+
 #about-sec{
-  margin-top: 25px;
+padding-top: 25px;
 }
 
 .text-color{
