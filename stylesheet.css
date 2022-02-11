@@ -107,7 +107,15 @@ hr {
     border-bottom: .1rem solid lightgray;
     padding-bottom: 1rem;
   }
+ 
+  #menu .card-body p{
+    color:grey;
+  }
 
+  .price {
+    font-size: smaller;
+    float:right;
+  }
 
 
   #h1Feedback {
