@@ -134,6 +134,7 @@ hr {
 .about {
     padding: 3% 15% 15%;
     text-align: left;
+    background: linear-gradient(#a0a3, #0000 70%);
 }
 
 .big-heading {
@@ -148,7 +149,7 @@ hr {
 }
 
 /* About Us Image */
-#about-image {
+#chess-image {
     width: 50%;
     transform: rotate(25deg);
     position: absolute;
@@ -158,24 +159,24 @@ hr {
 
 
 /*  About Us custom width  */
-  @media (max-width: 576px) {
-    #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
-        padding-left: 10px;
-        font-family: "IncendioFont";
-        text-align: left;
-    }
-
-    #about-image {
-      position: static;
-      transform: rotate(0);
-      padding-top: 10px;
-    }
-
-    .about{
-      padding: auto;
+@media (max-width: 576px) {
+  #fnameLabel, #lnameLabel, #contactTelLabel, #emailLabel, #feedbackLabel {
+      padding-left: 10px;
+      font-family: "IncendioFont";
       text-align: left;
-    }
   }
+
+  #chess-image {
+    position: static;
+    transform: rotate(0);
+    padding-top: 10px;
+  }
+
+  .about{
+    padding: auto;
+    text-align: left;
+  }
+}
 
   h1 {
     font-family: "HarryP";
